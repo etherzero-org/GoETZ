@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24.088px" height="24px" viewBox="162.458 0 24.088 24" enable-background="new 162.458 0 24.088 24" xml:space="preserve">
+	 viewBox="0 0 24.1 24" style="enable-background:new 0 0 24.1 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4F4D4B;}
+</style>
 <g>
-	<rect x="168.545" y="6.167" fill="#1D1D1B" width="2" height="2"/>
-	<path fill="#1D1D1B" d="M167.545,5.167h4.001v4.001h-4.001V5.167z M166.545,10.167h6v-6h-6V10.167z"/>
-	<rect x="178.545" y="6.167" fill="#1D1D1B" width="2" height="2"/>
-	<path fill="#1D1D1B" d="M176.545,10.167h6v-6h-6V10.167z M181.545,9.167h-4v-4h4V9.167z"/>
-	<rect x="168.545" y="16.167" fill="#1D1D1B" width="2" height="2"/>
-	<path fill="#1D1D1B" d="M167.546,15.167h4.001v4.001h-4.001V15.167z M166.546,20.167h5.999v-6h-5.999V20.167z"/>
-	<polygon fill="#1D1D1B" points="173.545,15.167 173.545,16.167 174.546,16.167 174.546,18.167 175.546,18.167 175.546,14.167 
-		174.546,14.167 174.546,15.167 	"/>
-	<path fill="#1D1D1B" d="M177.545,16.167h1v1h-1V16.167z M179.544,15.166h1.002v2.002h-1.002V15.166z M174.545,9.167v1h-1v1h1v2h2v5
-		h1v1h-1v1h2v-1h0.999v-1h1.001v1h-0.875v1h2.875v-2h-1v-2h1v-1.001h-1v-1.999h-1v0.999h-1.001v1h-1.999v-1.999h1v0.999h0.999
-		v-0.999h1.001v-1h-1.001v-1h-0.999v1h-1v-1h-2v-2H174.545z"/>
-	<polygon fill="#1D1D1B" points="175.545,7.167 175.545,4.167 173.545,4.167 173.545,5.167 174.545,5.167 174.545,6.167 
-		173.545,6.167 173.545,9.167 174.545,9.167 174.545,7.167 	"/>
-	<rect x="169.546" y="11.167" fill="#1D1D1B" width="1.001" height="1"/>
-	<polygon fill="#1D1D1B" points="171.545,11.167 171.545,12.167 170.545,12.167 170.545,13.167 172.545,13.167 172.545,12.167 
-		173.545,12.167 173.545,11.167 	"/>
-	<polygon fill="#1D1D1B" points="180.545,11.167 180.545,12.167 181.545,12.167 181.545,13.167 182.545,13.167 182.545,11.167 	"/>
-	<rect x="173.545" y="13.167" fill="#1D1D1B" width="1" height="1"/>
-	<rect x="173.545" y="18.167" fill="#1D1D1B" width="1" height="1"/>
-	<rect x="174.545" y="19.167" fill="#1D1D1B" width="1" height="1"/>
-	<polygon fill="#1D1D1B" points="166.545,11.167 166.545,13.167 169.545,13.167 169.545,12.167 168.545,12.167 168.545,11.167 	"/>
+	<rect x="6.1" y="6.2" class="st0" width="2" height="2"/>
+	<path class="st0" d="M5.1,5.2h4v4h-4V5.2z M4.1,10.2h6v-6h-6V10.2z"/>
+	<rect x="16.1" y="6.2" class="st0" width="2" height="2"/>
+	<path class="st0" d="M14.1,10.2h6v-6h-6V10.2z M19.1,9.2h-4v-4h4V9.2z"/>
+	<rect x="6.1" y="16.2" class="st0" width="2" height="2"/>
+	<path class="st0" d="M5.1,15.2h4v4h-4V15.2z M4.1,20.2h6v-6h-6V20.2z"/>
+	<polygon class="st0" points="11.1,15.2 11.1,16.2 12.1,16.2 12.1,18.2 13.1,18.2 13.1,14.2 12.1,14.2 12.1,15.2 	"/>
+	<path class="st0" d="M15.1,16.2h1v1h-1V16.2z M17.1,15.2h1v2h-1V15.2z M12.1,9.2v1h-1v1h1v2h2v5h1v1h-1v1h2v-1h1v-1h1v1h-0.9v1h2.9
+		v-2h-1v-2h1v-1h-1v-2h-1v1h-1v1h-2v-2h1v1h1v-1h1v-1h-1v-1h-1v1h-1v-1h-2v-2H12.1z"/>
+	<polygon class="st0" points="13.1,7.2 13.1,4.2 11.1,4.2 11.1,5.2 12.1,5.2 12.1,6.2 11.1,6.2 11.1,9.2 12.1,9.2 12.1,7.2 	"/>
+	<rect x="7.1" y="11.2" class="st0" width="1" height="1"/>
+	<polygon class="st0" points="9.1,11.2 9.1,12.2 8.1,12.2 8.1,13.2 10.1,13.2 10.1,12.2 11.1,12.2 11.1,11.2 	"/>
+	<polygon class="st0" points="18.1,11.2 18.1,12.2 19.1,12.2 19.1,13.2 20.1,13.2 20.1,11.2 	"/>
+	<rect x="11.1" y="13.2" class="st0" width="1" height="1"/>
+	<rect x="11.1" y="18.2" class="st0" width="1" height="1"/>
+	<rect x="12.1" y="19.2" class="st0" width="1" height="1"/>
+	<polygon class="st0" points="4.1,11.2 4.1,13.2 7.1,13.2 7.1,12.2 6.1,12.2 6.1,11.2 	"/>
 </g>
 </svg>

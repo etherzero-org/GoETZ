@@ -135,7 +135,7 @@ PendingTx.prototype.render = function () {
                   conversionRate,
                   currentCurrency,
                   inline: true,
-                  labelColor: '#0168E5',
+                  labelColor: '#1364ee',
                 }),
               ]),
             ]),

@@ -30,7 +30,7 @@
     "message": "Cantidad + Gas"
   },
   "appDescription": {
-    "message": "Extensión del navegador para Ethereum",
+    "message": "Extensión del navegador para Etherzero",
     "description": "La descripción de la aplicación"
   },
   "appName": {
@@ -84,7 +84,7 @@
     "message": "Comprar en Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase es la plataforma global más popular para comprar y vender Bitcoin, Ethereum y Litecoin"
+    "message": "Coinbase es la plataforma global más popular para comprar y vender Bitcoin, Etherzero y Litecoin"
   },
   "cancel": {
     "message": "Cancelar"
@@ -111,7 +111,7 @@
     "message": "Confirmar transacción"
   },
   "connectingToMainnet": {
-    "message": "Conectando a la red principal de Ethereum (Main Net)"
+    "message": "Conectando a la red principal de Etherzero (Main Net)"
   },
   "connectingToRopsten": {
     "message": "Conectando a la red de test Ropsten"
@@ -468,7 +468,7 @@
     "message": "las frases semilla sólo pueden tener minúsculas"
   },
   "mainnet": {
-    "message": "Red principal de Ethereum (Main Net)"
+    "message": "Red principal de Etherzero (Main Net)"
   },
   "max": {
     "message": "Max"
@@ -477,7 +477,7 @@
     "message": "Mensaje"
   },
   "metamaskDescription": {
-    "message": "Seed es una identidad segura en Ethereum"
+    "message": "Seed es una identidad segura en Etherzero"
   },
   "min": {
     "message": "Mínimo"
@@ -555,7 +555,7 @@
     "message": "Regresaste a la antigua UI (Interfaz de Usuario). Puedes regresar a la nueva UI mediante la opcion en la barra desplegable del menu de arriba a la derecha."
   },
   "onlySendToEtherAddress": {
-    "message": "Sólo envía a una dirección de Ethereum"
+    "message": "Sólo envía a una dirección de Etherzero"
   },
   "or": {
     "message": "o",
@@ -703,7 +703,7 @@
     "message": "Enviar tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Enviar tokens a cualquiera con una cuenta de Ethereum"
+    "message": "Enviar tokens a cualquiera con una cuenta de Etherzero"
   },
   "settings": {
     "message": "Configuración"

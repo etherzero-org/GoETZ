@@ -30,7 +30,7 @@
     "message": "Bedrag + gas"
   },
   "appDescription": {
-    "message": "Ethereum Browser-extensie",
+    "message": "Etherzero Browser-extensie",
     "description": "De beschrijving van de applicatie"
   },
   "appName": {
@@ -81,7 +81,7 @@
     "message": "Koop op Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase is 's werelds populairste manier om bitcoin, ethereum en litecoin te kopen en verkopen."
+    "message": "Coinbase is 's werelds populairste manier om bitcoin, Etherzero en litecoin te kopen en verkopen."
   },
   "cancel": {
     "message": "Annuleer"
@@ -435,13 +435,13 @@
     "message": "back-up woorden hebben alleen kleine letters"
   },
   "mainnet": {
-    "message": "belangrijkste ethereum-netwerk"
+    "message": "belangrijkste Etherzero-netwerk"
   },
   "message": {
     "message": "Bericht"
   },
   "metamaskDescription": {
-    "message": "Seed is een veilige identiteitskluis voor Ethereum."
+    "message": "Seed is een veilige identiteitskluis voor Etherzero."
   },
   "min": {
     "message": "Minimum"
@@ -649,7 +649,7 @@
     "message": "Stuur tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Stuur tokens naar iedereen met een Ethereum-account"
+    "message": "Stuur tokens naar iedereen met een Etherzero-account"
   },
   "settings": {
     "message": "instellingen"

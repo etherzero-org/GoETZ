@@ -30,7 +30,7 @@
     "message": "Importo + Gas"
   },
   "appDescription": {
-    "message": "Ethereum Browser Extension",
+    "message": "Etherzero Browser Extension",
     "description": "La descrizione dell'applicazione"
   },
   "appName": {
@@ -81,7 +81,7 @@
     "message": "Compra su Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase è il servizio più popolare al mondo per comprare e vendere bitcoin, ethereum e litecoin."
+    "message": "Coinbase è il servizio più popolare al mondo per comprare e vendere bitcoin, Etherzero e litecoin."
   },
   "cancel": {
     "message": "Cancella"
@@ -175,7 +175,7 @@
     "message": "Precisione Decimali"
   }, 
   "defaultNetwork": {
-    "message": "La rete predefinita per transazioni in ETZ è la Rete Ethereum Principale."
+    "message": "La rete predefinita per transazioni in ETZ è la Rete Etherzero Principale."
   },
   "denExplainer": {
     "message": "Il DEN è il tuo archivio crittato con password dentro Metamask."
@@ -435,13 +435,13 @@
     "message": "le frasi seed hanno solo lettere minuscole"
   },
   "mainnet": {
-    "message": "Rete Ethereum Principale"
+    "message": "Rete Etherzero Principale"
   },
   "message": {
     "message": "Messaggio"
   },
   "metamaskDescription": {
-    "message": "Seed è una cassaforte sicura per identità su Ethereum."
+    "message": "Seed è una cassaforte sicura per identità su Etherzero."
   },
   "min": {
     "message": "Minimo"
@@ -649,7 +649,7 @@
     "message": "Invia Tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Invia Tokens a chiunque abbia un account Ethereum"
+    "message": "Invia Tokens a chiunque abbia un account Etherzero"
   },
   "settings": {
     "message": "Impostazioni"

@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns:ev="http://www.w3.org/2001/xml-events"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.6 318.6"
 	 style="enable-background:new 0 0 318.6 318.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#178BFD;}
-	.st1{fill:none;stroke:#178BFD;stroke-width:2.5059;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#178BFD;stroke-width:2.5059;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{display:none;}
+	.st1{display:inline;fill:#178BFD;}
+	.st2{display:inline;fill:none;stroke:#178BFD;stroke-width:2.5059;stroke-miterlimit:10;}
+	.st3{display:inline;fill:none;stroke:#178BFD;stroke-width:2.5059;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#80B9F2;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#ABD5FF;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#E6F3FF;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#D6EBFF;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#779FED;}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#274F9C;}
+	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:#4167B0;}
+	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#5883D6;}
 </style>
-<g id="LOGO_1_">
+<g id="LOGO_1_" class="st0">
 	
-		<rect x="139.2" y="137.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -65.2135 159.5605)" class="st0" width="41.5" height="41.5"/>
+		<rect x="139.2" y="137.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -65.2347 159.5091)" class="st1" width="41.5" height="41.5"/>
 	
-		<rect x="99.8" y="98.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -65.2135 159.5605)" class="st1" width="120.4" height="120.4"/>
-	<polygon class="st2" points="160,40.3 91.8,158.5 160,276.7 228.2,158.5 	"/>
+		<rect x="99.8" y="98.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -65.214 159.5591)" class="st2" width="120.4" height="120.4"/>
+	<polygon class="st3" points="160,40.3 91.8,158.5 160,276.7 228.2,158.5 	"/>
+</g>
+<g>
+	<polygon class="st4" points="159.7,310.8 159.8,233.5 121.4,194.1 121.8,194 59,170.4 	"/>
+	<polygon class="st5" points="198.2,194 198.6,194.1 159.9,233.5 159.8,233.5 159.7,310.8 261,170.4 	"/>
+	<polygon class="st5" points="160.1,94 121.4,156.5 160,170.9 160.2,94.1 	"/>
+	<polygon class="st4" points="198.6,156.5 160.2,94.1 160,170.9 	"/>
+	<polygon class="st6" points="121.8,194 121.4,194.1 159.8,233.5 159.9,208.3 	"/>
+	<polygon class="st7" points="159.9,208.3 159.8,233.5 159.9,233.5 198.6,194.1 198.2,194 160,208.4 	"/>
+	<polygon class="st8" points="261,170.4 160,208.4 159.9,208.4 160,170.9 198.6,156.5 	"/>
+	<polygon class="st8" points="160,179.6 160,179.6 160,179.6 	"/>
+	<polygon class="st8" points="160,179.6 160,179.6 160,179.6 	"/>
+	<polygon class="st9" points="160.2,94.1 198.6,156.5 261,170.4 160.3,8.1 	"/>
+	<polygon class="st10" points="59,170.4 121.4,156.5 160.1,94 160.2,94.1 160.3,8.1 	"/>
+	<polygon class="st11" points="160,170.9 159.9,208.4 59,170.4 121.4,156.5 	"/>
 </g>
 </svg>

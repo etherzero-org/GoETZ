@@ -30,7 +30,7 @@
     "message": "Znesek + Gas"
   },
   "appDescription": {
-    "message": "Denarnica za Ethereum v brskalniku",
+    "message": "Denarnica za Etherzero v brskalniku",
     "description": "The description of the application"
   },
   "appName": {
@@ -81,7 +81,7 @@
     "message": "Kupi na Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase je najpopularnejši načun za kupovanje in prodajo bitcoinov, ethereuma, in litecoina."
+    "message": "Coinbase je najpopularnejši načun za kupovanje in prodajo bitcoinov, Etherzeroa, in litecoina."
   },
   "cancel": {
     "message": "Prekliči"
@@ -441,7 +441,7 @@
     "message": "Sporočilo"
   },
   "metamaskDescription": {
-    "message": "Seed je varen identitetni sklad za Ethereum."
+    "message": "Seed je varen identitetni sklad za Etherzero."
   },
   "min": {
     "message": "Najmanj"
@@ -649,7 +649,7 @@
     "message": "Pošlji žetone"
   },
   "sendTokensAnywhere": {
-    "message": "Pošljite žetone vsem, ki imajo Ethereum račun"
+    "message": "Pošljite žetone vsem, ki imajo Etherzero račun"
   },
   "settings": {
     "message": "Nastavitve"

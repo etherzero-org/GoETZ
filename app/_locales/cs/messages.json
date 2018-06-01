@@ -30,7 +30,7 @@
     "message": "Částka + palivo"
   },
   "appDescription": {
-    "message": "Ethereum rozšíření prohlížeče",
+    "message": "Etherzero rozšíření prohlížeče",
     "description": "The description of the application"
   },
   "appName": {
@@ -474,7 +474,7 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "Seed je bezpečný osobní trezor pro Ethereum."
+    "message": "Seed je bezpečný osobní trezor pro Etherzero."
   },
   "min": {
     "message": "Minimum"
@@ -718,13 +718,13 @@
     "message": "Odeslat tokeny"
   },
   "onlySendToEtherAddress": {
-    "message": "Posílejte jen ETZ na Ethereum adresu."
+    "message": "Posílejte jen ETZ na Etherzero adresu."
   },
   "searchTokens": {
     "message": "Hledat tokeny"
   },
   "sendTokensAnywhere": {
-    "message": "Posílejte tokeny komukoli s Ethereum účtem"
+    "message": "Posílejte tokeny komukoli s Etherzero účtem"
   },
   "settings": {
     "message": "Nastavení"

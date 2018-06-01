@@ -72,11 +72,11 @@ BuyButtonSubview.prototype.headerSubview = function () {
           style: {
             width: '100vw',
             background: 'rgb(235, 235, 235)',
-            color: 'rgb(1, 104, 229)',
+            color: 'rgb(2, 182, 241)',
             paddingTop: '4px',
             paddingBottom: '4px',
           },
-        }, 'Buy Eth'),
+        }, 'Buy Etz'),
       ]),
 
       // loading indication
@@ -114,7 +114,7 @@ BuyButtonSubview.prototype.headerSubview = function () {
             paddingLeft: '15px',
             width: '100vw',
             background: 'rgb(235, 235, 235)',
-            color: 'rgb(1, 104, 229)',
+            color: 'rgb(2, 182, 241)',
             paddingTop: '4px',
             paddingBottom: '4px',
           },
@@ -216,7 +216,7 @@ BuyButtonSubview.prototype.mainnetSubview = function () {
           fontFamily: 'Montserrat Light',
           width: '100vw',
           background: 'rgb(235, 235, 235)',
-          color: 'rgb(1, 104, 229)',
+          color: 'rgb(2, 182, 241)',
           paddingTop: '4px',
           paddingBottom: '4px',
         },

@@ -84,7 +84,7 @@
     "message": "Buy on Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin."
+    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, Etherzero, and litecoin."
   },
   "ok": {
     "message": "Ok"
@@ -486,7 +486,7 @@
     "message": "Message"
   },
   "metamaskDescription": {
-    "message": "Seed is a secure identity vault for Ethereum."
+    "message": "Seed is a secure identity vault for Etherzero."
   },
   "metamaskSeedWords": {
     "message": "Seed Seed Words"
@@ -751,13 +751,13 @@
     "message": "Send Tokens"
   },
   "onlySendToEtherAddress": {
-    "message": "Only send ETZ to an Ethereum address."
+    "message": "Only send ETZ to an Etherzero address."
   },
   "searchTokens": {
     "message": "Search Tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Send Tokens to anyone with an Ethereum account"
+    "message": "Send Tokens to anyone with an Etherzero account"
   },
   "settings": {
     "message": "Settings"

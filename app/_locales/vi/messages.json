@@ -25,7 +25,7 @@
   },
   "appDescription": {
     "description": "Mô tả phần mềm",
-    "message": "Tính năng Ethereum cho trình duyệt"
+    "message": "Tính năng Etherzero cho trình duyệt"
   },
   "appName": {
     "description": "Tên phần mềm",
@@ -63,7 +63,7 @@
     "message": "Mua trên Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase là dịch vụ ví điện tử thông dụng nhất thế giới để mua bán Bitcoin, Ethereum, và Litecoin"
+    "message": "Coinbase là dịch vụ ví điện tử thông dụng nhất thế giới để mua bán Bitcoin, Etherzero, và Litecoin"
   },
   "cancel": {
     "message": "Hủy"
@@ -342,7 +342,7 @@
     "message": "Nới lỏng"
   },
   "mainnet": {
-    "message": "Mạng Ethereum MainNet (tiền ETZ thật)"
+    "message": "Mạng Etherzero MainNet (tiền ETZ thật)"
   },
   "message": {
     "message": "Tin nhắn"
@@ -496,7 +496,7 @@
     "message": "Gửi mã token"
   },
   "sendTokensAnywhere": {
-    "message": "Gửi mã token đến bất kỳ ai có tài khoản Ethereum"
+    "message": "Gửi mã token đến bất kỳ ai có tài khoản Etherzero"
   },
   "settings": {
     "message": "Cài đặt"

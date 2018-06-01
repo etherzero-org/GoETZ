@@ -62,7 +62,7 @@ TokenList.prototype.render = function () {
       this.context.t('troubleTokenBalances'),
       h('span.hotFix', {
         style: {
-          color: 'rgba(1 , 104 , 229, 1)',
+          color: 'rgba(128,185,242,1)',
           cursor: 'pointer',
         },
         onClick: () => {

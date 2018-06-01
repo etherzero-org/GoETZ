@@ -26,7 +26,7 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 // setup web3
 //
 
-if (typeof window.web3 !== 'undefined') {
+if (typeof window.web3_etz !== 'undefined') {
   throw new Error(`Seeddetected another web3.
      Seedwill not work reliably with another web3 extension.
      This usually happens if you have two MetaMasks installed,

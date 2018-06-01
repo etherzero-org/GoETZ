@@ -30,7 +30,7 @@
     "message": "Valor + Gas"
   },
   "appDescription": {
-    "message": "Extensão para o browser de Ethereum",
+    "message": "Extensão para o browser de Etherzero",
     "description": "A descrição da aplicação"
   },
   "appName": {
@@ -81,7 +81,7 @@
     "message": "Comprar no Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase é a forma mais conhecida para comprar e vender bitcoin, ethereum, e litecoin."
+    "message": "Coinbase é a forma mais conhecida para comprar e vender bitcoin, Etherzero, e litecoin."
   },
   "cancel": {
     "message": "Cancelar"
@@ -435,13 +435,13 @@
     "message": "palavras da seed apenas têm caracteres minúsculos"
   },
   "mainnet": {
-    "message": "Rede Principal de Ethereum"
+    "message": "Rede Principal de Etherzero"
   },
   "message": {
     "message": "Mensagem"
   },
   "metamaskDescription": {
-    "message": "O Seed é um lugar seguro para guardar a sua identidade em em Ethereum."
+    "message": "O Seed é um lugar seguro para guardar a sua identidade em em Etherzero."
   },
   "min": {
     "message": "Mínimo"
@@ -649,7 +649,7 @@
     "message": "Enviar Tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Enviar Tokens para qualquer pessoa com uma conta Ethereum"
+    "message": "Enviar Tokens para qualquer pessoa com uma conta Etherzero"
   },
   "settings": {
     "message": "Definições"

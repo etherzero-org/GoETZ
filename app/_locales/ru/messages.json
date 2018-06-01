@@ -30,7 +30,7 @@
     "message": "Сумма + газ"
   },
   "appDescription": {
-    "message": "Расширение браузера для Ethereum",
+    "message": "Расширение браузера для Etherzero",
     "description": "The description of the application"
   },
   "appName": {
@@ -84,7 +84,7 @@
     "message": "Купить на Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Биржа Coinbase – это наиболее популярный способ купить или продать bitcoin, ethereum и litecoin."
+    "message": "Биржа Coinbase – это наиболее популярный способ купить или продать bitcoin, Etherzero и litecoin."
   },
   "ok": {
     "message": "ОК"
@@ -187,7 +187,7 @@
     "message": "Количество десятичных разрядов"
   },
   "defaultNetwork": {
-    "message": "Основная сеть Ethereum – это сеть по умолчанию для ETZ транзакций."
+    "message": "Основная сеть Etherzero – это сеть по умолчанию для ETZ транзакций."
   },
   "denExplainer": {
     "message": "DEN – это зашифрованное паролем хранилище внутри Seed."
@@ -462,13 +462,13 @@
     "message": "ключевая фраза может содержать только символы нижнего регистра"
   },
   "mainnet": {
-    "message": "Основная сеть Ethereum"
+    "message": "Основная сеть Etherzero"
   },
   "message": {
     "message": "Сообщение"
   },
   "metamaskDescription": {
-    "message": "Seed – безопасный кошелек для Ethereum."
+    "message": "Seed – безопасный кошелек для Etherzero."
   },
   "min": {
     "message": "Минимум"
@@ -644,7 +644,7 @@
     "message": "Current RPC"
   },
   "connectingToMainnet": {
-    "message": "Соединение с основной сетью Ethereum"
+    "message": "Соединение с основной сетью Etherzero"
   },
   "connectingToRopsten": {
     "message": "Соединение с тестовой сетью Ropsten"
@@ -706,13 +706,13 @@
     "message": "Отправить токены"
   },
   "onlySendToEtherAddress": {
-    "message": "Отправляйте ETZ только на Ethereum адреса."
+    "message": "Отправляйте ETZ только на Etherzero адреса."
   },
   "searchTokens": {
     "message": "Поиск токенов"
   },
   "sendTokensAnywhere": {
-    "message": "Отправить токены любому, у кого есть счет Ethereum"
+    "message": "Отправить токены любому, у кого есть счет Etherzero"
   },
   "settings": {
     "message": "Настройки"

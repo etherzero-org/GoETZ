@@ -53,7 +53,7 @@ AccountImportSubview.prototype.render = function () {
         h('span', 'Imported accounts will not be associated with your originally created Seed account seedphrase. Learn more about imported accounts '),
         h('span', {
           style: {
-            color: 'rgba(1 , 104 , 229, 1)',
+            color: 'rgba(128,185,242,1)',
             cursor: 'pointer',
             textDecoration: 'underline',
           },
@@ -67,7 +67,7 @@ AccountImportSubview.prototype.render = function () {
       h('div', {
         style: {
           padding: '10px',
-          color: 'rgb(1, 104, 229)',
+          color: 'rgb(2, 182, 241)',
         },
       }, [
 
@@ -75,7 +75,7 @@ AccountImportSubview.prototype.render = function () {
 
         h('style', `
           .has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select-value-label {
-            color: rgb(1, 104, 229);
+            color: rgb(2, 182, 241);
           }
         `),
 

@@ -30,7 +30,7 @@
       "message": "Tutar + Gas"
     },
     "appDescription": {
-      "message": "Ethereum Tarayıcı Uzantısı",
+      "message": "Etherzero Tarayıcı Uzantısı",
       "description": "Uygulama açıklaması"
     },
     "appName": {
@@ -84,7 +84,7 @@
       "message": "Coinbase'de satın al"
     },
     "buyCoinbaseExplainer": {
-      "message": "Coinbase bitcoin, ethereum, and litecoin alıp satmanın dünyadaki en popüler yolu"
+      "message": "Coinbase bitcoin, Etherzero, and litecoin alıp satmanın dünyadaki en popüler yolu"
     },
     "ok": {
       "message": "Tamam"
@@ -468,13 +468,13 @@
       "message": "kaynak kelimeleri sadece küçük harflerden oluşabilir."
     },
     "mainnet": {
-      "message": "Main Ethereum Ağı"
+      "message": "Main Etherzero Ağı"
     },
     "message": {
       "message": "Mesaj"
     },
     "metamaskDescription": {
-      "message": "Seed Ethereum için güvenli bir kimlik kasasıdır."
+      "message": "Seed Etherzero için güvenli bir kimlik kasasıdır."
     },
     "min": {
       "message": "Minimum"
@@ -650,7 +650,7 @@
       "message": "Geçerli RPC"
     },
     "connectingToMainnet": {
-      "message": "Main Ethereum Ağına bağlanıyor"
+      "message": "Main Etherzero Ağına bağlanıyor"
     },
     "connectingToRopsten": {
       "message": "Ropsten Test Ağına bağlanıyor"
@@ -718,13 +718,13 @@
       "message": "Jeton Gönder"
     },
     "onlySendToEtherAddress": {
-      "message": "Ethereum adresine sadece ETZ gönder."
+      "message": "Etherzero adresine sadece ETZ gönder."
     },
     "searchTokens": {
       "message": "Jeton ara"
     },
     "sendTokensAnywhere": {
-      "message": "Ethereum hesabı olan birine Jeton gönder"
+      "message": "Etherzero hesabı olan birine Jeton gönder"
     },
     "settings": {
       "message": "Ayarlar"
