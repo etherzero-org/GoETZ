@@ -397,7 +397,7 @@ rollback to 3.10.0 due to bug
 - Add "send" link to token list, which goes to TokenFactory.
 - Fix bug where slowly mined txs would sometimes be incorrectly marked as failed.
 - Fix bug where badge count did not reflect personal_sign pending messages.
-- Seed word confirmation wording is now scarier.
+- GoETZ word confirmation wording is now scarier.
 - Fix error for invalid seed words.
 - Prevent users from submitting two duplicate transactions by disabling submit.
 - Allow Dapps to specify gas price as hex string.
@@ -951,7 +951,7 @@ popup notification opens up.
 - Fix bug on config screen where current RPC address was always displayed wrong.
 - Fixed bug where entering a decimal value when sending a transaction would result in sending the wrong amount.
 - Add save button to custom RPC input field.
-- Add quick-select button for RPC on `localhost:8545`.
+- Add quick-select button for RPC on `localhost:9646`.
 - Improve config view styling.
 - Users have been migrated from old test-net RPC to a newer test-net RPC.
 

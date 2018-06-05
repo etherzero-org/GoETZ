@@ -16,7 +16,9 @@ const {
   MAINNET,
   LOCALHOST,
 } = require('./enums')
-const LOCALHOST_RPC_URL = 'https://rpc.etherzero.org:443'
+const MAIN_RPC_URL = 'https://rpc.etherzero.org:443'
+const LOCALHOST_RPC_URL = 'http://localhost:9646/'
+
 const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET]
 
 const env = process.env.METAMASK_ENV
@@ -120,7 +122,7 @@ module.exports = class NetworkController extends EventEmitter {
     // infura type-based endpoints
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
     if (isInfura) {
-      this._configureStandardProvider({ rpcUrl: LOCALHOST_RPC_URL })
+      this._configureStandardProvider({ rpcUrl: MAIN_RPC_URL })
     // other type-based rpc endpoints
     } else if (type === LOCALHOST) {
       this._configureStandardProvider({ rpcUrl: LOCALHOST_RPC_URL })

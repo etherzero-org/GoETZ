@@ -37,7 +37,7 @@ RevealSeedConfirmation.prototype.render = function () {
           padding: 6,
         },
       }, [
-        'Reveal Seed Words',
+        'Reveal GoETZ Words',
       ]),
 
       h('.div', {

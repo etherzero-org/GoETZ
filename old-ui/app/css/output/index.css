@@ -1097,7 +1097,7 @@ button.btn-thin {
 
 .app-header h1 {
   font-family: Roboto;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 400;
   color: #22232c;
   line-height: 29px; }

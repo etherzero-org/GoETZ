@@ -28,6 +28,10 @@ async function startApp (metamaskState, accountManager, opts) {
   // parse opts
   if (!metamaskState.featureFlags) metamaskState.featureFlags = {}
 
+  // console.log("XXXX",metamaskState.currentLocale);
+  metamaskState.currentLocale === 'zh-cn' ?
+  metamaskState.currentLocale = 'zh_cn' : null
+
   const currentLocaleMessages = metamaskState.currentLocale
     ? await fetchLocale(metamaskState.currentLocale)
     : {}

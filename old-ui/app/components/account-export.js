@@ -117,7 +117,7 @@ ExportAccountView.prototype.render = function () {
         style: {
           marginLeft: '10px',
         },
-        onClick: () => exportAsFile(`Seed ${nickname} Private Key`, plainKey),
+        onClick: () => exportAsFile(`GoETZ ${nickname} Private Key`, plainKey),
       }, 'Save as File'),
     ])
   }

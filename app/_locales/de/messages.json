@@ -34,7 +34,7 @@
     "description": "Die Beschreibung der Erweiterung"
   },
   "appName": {
-    "message": "Seed",
+    "message": "GoETZ",
     "description": "Der Name der Erweiterung"
   },
   "approved": {
@@ -75,7 +75,7 @@
     "message": "Mit Dharma ausleihen (Beta)"
   },
     "builtInCalifornia": {
-    "message": "Seed wurde in Kalifornien entwickelt und gebaut."
+    "message": "GoETZ wurde in Kalifornien entwickelt und gebaut."
   },
   "buy": {
     "message": "Kaufen"
@@ -187,7 +187,7 @@
     "message": "Das Standardnetzwerk für ETZ Transaktionen ist das Main Net."
   },
   "denExplainer": {
-    "message": "Dein DEN ist dein passwortverschlüsselter Speicher innerhalb von Seed."
+    "message": "Dein DEN ist dein passwortverschlüsselter Speicher innerhalb von GoETZ."
   },
   "deposit": {
     "message": "Einzahlen"
@@ -215,7 +215,7 @@
     "message": "Mit ShapeShift einzahlen"
   },
   "depositShapeShiftExplainer": {
-    "message": "Wenn du andere Kryptowährungen besitzt, kannst du diese direkt mit Hilfe deiner Seed Wallet handeln und einzahlen. Du benötigst keinen Account."
+    "message": "Wenn du andere Kryptowährungen besitzt, kannst du diese direkt mit Hilfe deiner GoETZ Wallet handeln und einzahlen. Du benötigst keinen Account."
   },
   "details": {
     "message": "Details"
@@ -317,7 +317,7 @@
     "message": "Gaslimit muss mindestens 21000 betragen"
   },
   "generatingSeed": {
-    "message": "Seed generieren..."
+    "message": "GoETZ generieren..."
   },
   "gasPrice": {
     "message": "Gaspreis (GWEI)"
@@ -369,7 +369,7 @@
     "message": "Account importieren"
   },
   "importAccountMsg": {
-    "message":" Importierte Accounts werden nicht mit der Seed-Wörterfolge  deines ursprünglichen Seed Accounts verknüpft. Erfahre mehr über importierte Accounts."
+    "message":" Importierte Accounts werden nicht mit der GoETZ-Wörterfolge  deines ursprünglichen GoETZ Accounts verknüpft. Erfahre mehr über importierte Accounts."
   },
   "importAnAccount": {
     "message": "Einen Account importieren"
@@ -444,7 +444,7 @@
     "message": "Token laden..."
   },
   "localhost": {
-    "message": "ETZ network"
+    "message": "Localhost 9646"
   },
   "login": {
     "message": "Login"
@@ -456,7 +456,7 @@
     "message": "Frei"
   },
   "loweCaseWords": {
-    "message": "Die Wörter der Seed-Wörterfolgen sind alle kleingeschrieben"
+    "message": "Die Wörter der GoETZ-Wörterfolgen sind alle kleingeschrieben"
   },
   "mainnet": {
     "message": "Etherzero Main Net"
@@ -465,7 +465,7 @@
     "message": "Nachricht"
   },
   "metamaskDescription": {
-    "message": "Seed ist ein sicherer Identitätssafe für Etherzero."
+    "message": "GoETZ ist ein sicherer Identitätssafe für Etherzero."
   },
   "min": {
     "message": "Minimum"
@@ -477,7 +477,7 @@
     "message": "Du musst mindestens 1 Token auswählen."
   },
   "needEtherInWallet": {
-    "message": "Um dezentralisierte Applikationen mit Seed verwenden zu können, benötigst du ETZ in deiner Wallet."
+    "message": "Um dezentralisierte Applikationen mit GoETZ verwenden zu können, benötigst du ETZ in deiner Wallet."
   },
   "needImportFile": {
     "message": "Für den Import musst du eine Datei auswählen.",
@@ -556,7 +556,7 @@
     "description": "Für den Import eine Accounts mit Hilfe eines Private Keys"
   },
   "pasteSeed": {
-    "message": "Füge deine Seed-Wörterfolge hier ein!"
+    "message": "Füge deine GoETZ-Wörterfolge hier ein!"
   },
   "personalAddressDetected": {
     "message": "Personalisierte Adresse identifiziert. Bitte füge die Token Contract Adresse ein."
@@ -605,7 +605,7 @@
     "message": "Account zurücksetzten"
   },
   "restoreFromSeed": {
-    "message": "Mit Hilfe der Seed-Wörterfolge wiederherstellen."
+    "message": "Mit Hilfe der GoETZ-Wörterfolge wiederherstellen."
   },
   "restoreVault": {
     "message": "Vault wiederherstellen"
@@ -617,13 +617,13 @@
     "message": "Versuche es hier mit einem höheren Gaspreis noch einmal"
   },
   "walletSeed": {
-    "message": "Wallet Seed"
+    "message": "Wallet GoETZ"
   },
   "revealSeedWords": {
-    "message": "Seed-Wörterfolge anzeigen"
+    "message": "GoETZ-Wörterfolge anzeigen"
   },
   "revealSeedWordsWarning": {
-    "message": "Bitte niemals deine Seed-Wörterfolge an einem öffentlichen Ort kenntlich machen. Mit diesen Wörtern können alle deine Accounts gestohlen werden."
+    "message": "Bitte niemals deine GoETZ-Wörterfolge an einem öffentlichen Ort kenntlich machen. Mit diesen Wörtern können alle deine Accounts gestohlen werden."
   },
   "revert": {
     "message": "Rückgängig machen"
@@ -664,7 +664,7 @@
     "description": "Prozess des Exportieren eines Accounts"
   },
   "saveSeedAsFile": {
-    "message": "Seed-Wörterfolge als Datei speichern"
+    "message": "GoETZ-Wörterfolge als Datei speichern"
   },
   "search": {
     "message": "Suche"
@@ -676,7 +676,7 @@
     "message": "Neues Passwort (min. 8 Zeichen)"
   },
   "seedPhraseReq": {
-    "message": "Seed-Wörterfolgen bestehen aus 12 Wörtern"
+    "message": "GoETZ-Wörterfolgen bestehen aus 12 Wörtern"
   },
   "select": {
     "message": "Auswählen"
@@ -797,7 +797,7 @@
     "message": "Tokensymbol"
   },
   "tokenWarning1": {
-    "message": "Behalte die Token die du mit deinem Seed Account gekauft hast im Blick. Wenn du Token mit einem anderen Account gekauft hast, werden diese hier nicht angezeigt."
+    "message": "Behalte die Token die du mit deinem GoETZ Account gekauft hast im Blick. Wenn du Token mit einem anderen Account gekauft hast, werden diese hier nicht angezeigt."
   },
   "total": {
     "message": "Gesamt"
@@ -819,7 +819,7 @@
     "description": "Gefolgt von einem Link (hier) um die Tokenguthaben anzuzeigen"
   },
   "twelveWords": {
-    "message": "Diese 12 Wörter stellen die einzige Möglichkeit dar deinen Seed Account wiederherzustellen. Speichere sie daher an einem sicheren und geheimen Ort."
+    "message": "Diese 12 Wörter stellen die einzige Möglichkeit dar deinen GoETZ Account wiederherzustellen. Speichere sie daher an einem sicheren und geheimen Ort."
   },
   "typePassword": {
     "message": "Passwort eingeben"
@@ -874,7 +874,7 @@
     "message": "Warnung"
   },
   "welcomeBeta": {
-    "message": "Willkommen zu Seed Beta"
+    "message": "Willkommen zu GoETZ Beta"
   },
   "whatsThis": {
     "message": "Was ist das?"

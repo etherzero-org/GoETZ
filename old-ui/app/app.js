@@ -261,6 +261,22 @@ App.prototype.renderNetworkDropdown = function () {
     h(
       DropdownMenuItem,
       {
+        key: 'main',
+        closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+        onClick: () => props.dispatch(actions.setProviderType('mainnet')),
+        style: {
+          fontSize: '18px',
+        },
+      },
+      [
+        h('.menu-icon.diamond'),
+        'ETZ Network',
+        providerType === 'mainnet' ? h('.check', '✓') : null,
+      ]
+    ),
+    h(
+      DropdownMenuItem,
+      {
         key: 'default',
         closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
         onClick: () => props.dispatch(actions.setProviderType('localhost')),
@@ -269,9 +285,9 @@ App.prototype.renderNetworkDropdown = function () {
         },
       },
       [
-        h('.menu-icon.diamond'),
-        'ETZ Network',
-        providerType === 'localhost' ? h('.check', '✓') : null,
+        h('i.fa.fa-question-circle.fa-lg.menu-icon'),
+        'Localhost 9646',
+        activeNetwork === 'http://localhost:9646' ? h('.check', '✓') : null,
       ]
     ),
 
@@ -571,7 +587,7 @@ App.prototype.renderCustomOption = function (provider) {
 
   switch (rpcTarget) {
 
-    case 'http://localhost:8545':
+    case 'http://localhost:9646':
       return null
 
     default:
@@ -597,7 +613,7 @@ App.prototype.getNetworkName = function () {
 
   let name
 
-  if (providerName === 'localhost') {
+  if (providerName === 'mainnet') {
     name = 'ETZ Network'
   } else if (providerName === 'ropsten') {
     name = 'Ropsten Test Network'
@@ -617,7 +633,7 @@ App.prototype.renderCommonRpc = function (rpcList, provider) {
   const rpcTarget = provider.rpcTarget
 
   return rpcList.map((rpc) => {
-    if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget)) {
+    if ((rpc === 'http://localhost:9646') || (rpc === rpcTarget)) {
       return null
     } else {
       return h(

@@ -125,7 +125,7 @@ ConfigScreen.prototype.render = function () {
                   if (err) {
                     state.dispatch(actions.displayWarning('Error in retrieving state logs.'))
                   } else {
-                    exportAsFile('Seed State Logs.json', result)
+                    exportAsFile('GoETZ State Logs.json', result)
                   }
                 })
               },
@@ -147,7 +147,7 @@ ConfigScreen.prototype.render = function () {
                 event.preventDefault()
                 state.dispatch(actions.revealSeedConfirmation())
               },
-            }, 'Reveal Seed Words'),
+            }, 'Reveal GoETZ Words'),
           ]),
 
           h('hr.horizontal-line'),
@@ -231,7 +231,7 @@ function currentProviderDisplay (metamaskState) {
 
     case 'mainnet':
       title = 'Current Network'
-      value = 'ETZ Network'
+      value = 'Localhost 9646'
       break
 
     case 'ropsten':

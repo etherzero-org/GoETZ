@@ -157,7 +157,7 @@ button.btn-thin {
 
 .app-header h1 {
   font-family: 'Montserrat Regular';
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #AEAEAE;
 }
 

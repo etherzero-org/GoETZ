@@ -17,16 +17,16 @@ function MetamaskInpageProvider (connectionStream) {
     connectionStream,
     mux,
     connectionStream,
-    (err) => logStreamDisconnectWarning('Seed', err)
+    (err) => logStreamDisconnectWarning('GoETZ', err)
   )
 
   // subscribe to metamask public config (one-way)
-  self.publicConfigStore = new LocalStorageStore({ storageKey: 'Seed-Config' })
+  self.publicConfigStore = new LocalStorageStore({ storageKey: 'GoETZ-Config' })
 
   pump(
     mux.createStream('publicConfig'),
     asStream(self.publicConfigStore),
-    (err) => logStreamDisconnectWarning('Seed PublicConfigStore', err)
+    (err) => logStreamDisconnectWarning('GoETZ PublicConfigStore', err)
   )
 
   // ignore phishing warning message (handled elsewhere)
@@ -38,7 +38,7 @@ function MetamaskInpageProvider (connectionStream) {
     streamMiddleware.stream,
     mux.createStream('provider'),
     streamMiddleware.stream,
-    (err) => logStreamDisconnectWarning('Seed RpcProvider', err)
+    (err) => logStreamDisconnectWarning('GoETZ RpcProvider', err)
   )
 
   // handle sendAsync requests via dapp-side rpc engine
@@ -87,8 +87,8 @@ MetamaskInpageProvider.prototype.send = function (payload) {
 
     // throw not-supported Error
     default:
-      var link = 'https://github.com/Seed/faq/blob/master/DEVELOPERS.md#dizzy-all-async---think-of-metamask-as-a-light-client'
-      var message = `The Seed Web3 object does not support synchronous methods like ${payload.method} without a callback parameter. See ${link} for details.`
+      var link = 'https://github.com/GoETZ/faq/blob/master/DEVELOPERS.md#dizzy-all-async---think-of-metamask-as-a-light-client'
+      var message = `The GoETZ Web3 object does not support synchronous methods like ${payload.method} without a callback parameter. See ${link} for details.`
       throw new Error(message)
 
   }

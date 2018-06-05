@@ -51,7 +51,7 @@ class RestoreVaultPage extends PersistentForm {
     var seedBox = document.querySelector('textarea.twelve-word-phrase')
     var seed = seedBox.value.trim()
     if (seed.split(' ').length !== 12) {
-      this.setState({ error: 'Seed phrases are 12 words long' })
+      this.setState({ error: 'GoETZ phrases are 12 words long' })
       return
     }
 
@@ -85,7 +85,7 @@ class RestoreVaultPage extends PersistentForm {
         ]),
 
         // wallet seed entry
-        h('h3', 'Wallet Seed'),
+        h('h3', 'Wallet GoETZ'),
         h('textarea.twelve-word-phrase.letter-spacey', {
           dataset: {
             persistentFormId: 'wallet-seed',

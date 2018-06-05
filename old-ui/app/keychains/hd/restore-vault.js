@@ -40,7 +40,7 @@ RestoreVaultScreen.prototype.render = function () {
       ]),
 
       // wallet seed entry
-      h('h3', 'Wallet Seed'),
+      h('h3', 'Wallet GoETZ'),
       h('textarea.twelve-word-phrase.letter-spacey', {
         dataset: {
           persistentFormId: 'wallet-seed',

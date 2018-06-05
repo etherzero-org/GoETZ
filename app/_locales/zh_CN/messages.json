@@ -34,7 +34,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "Seed",
+    "message": "GoETZ",
     "description": "The name of the application"
   },
   "approved": {
@@ -193,7 +193,7 @@
     "message": "默认以太零交易网络为主网。"
   },
   "denExplainer": {
-    "message": "你的 DEN 是存储在 Seed 中的已加密密码。"
+    "message": "你的 DEN 是存储在 GoETZ 中的已加密密码。"
   },
   "deposit": {
     "message": "存入"
@@ -221,7 +221,7 @@
     "message": "从 ShapeShift 存入"
   },
   "depositShapeShiftExplainer": {
-    "message": "如果你拥有其他加密货币，你可以直接交易并存入 ETZ 到你的 Seed 钱包。 不需要帐户。"
+    "message": "如果你拥有其他加密货币，你可以直接交易并存入 ETZ 到你的 GoETZ 钱包。 不需要帐户。"
   },
   "details": {
     "message": "详情"
@@ -381,7 +381,7 @@
     "message": "导入账户"
   },
   "importAccountMsg": {
-    "message":" Imported accounts will not be associated with your originally created Seed account seedphrase. Learn more about imported accounts "
+    "message":" Imported accounts will not be associated with your originally created GoETZ account seedphrase. Learn more about imported accounts "
   },
   "importAnAccount": {
     "message": "导入一个账户"
@@ -428,7 +428,7 @@
     "description": "format for importing an account"
   },
   "keepTrackTokens": {
-    "message": "Keep track of the tokens you’ve bought with your Seed account."
+    "message": "Keep track of the tokens you’ve bought with your GoETZ account."
   },
   "kovan": {
     "message": "Kovan 测试网络"
@@ -462,7 +462,7 @@
     "message": "加载代币中..."
   },
   "localhost": {
-    "message": "ETZ主网络"
+    "message": "Localhost 9646"
   },
   "login": {
     "message": "登录"
@@ -483,10 +483,10 @@
     "message": "消息"
   },
   "metamaskDescription": {
-    "message": "Seed is a secure identity vault for Etherzero."
+    "message": "GoETZ is a secure identity vault for Etherzero."
   },
   "metamaskSeedWords": {
-    "message": "Seed 助记词"
+    "message": "GoETZ 助记词"
   },
   "min": {
     "message": "最小"
@@ -498,7 +498,7 @@
     "message": "至少选择一种代币."
   },
   "needEtherInWallet": {
-    "message": "使用 Seed 与 DAPP 交互，需要你的钱包里有 Ether。"
+    "message": "使用 GoETZ 与 DAPP 交互，需要你的钱包里有 Ether。"
   },
   "needImportFile": {
     "message": "必须选择导入一个文件。",
@@ -848,7 +848,7 @@
     "message": "代币符号"
   },
   "tokenWarning1": {
-    "message": "Keep track of the tokens you’ve bought with your Seed account. If you bought tokens using a different account, those tokens will not appear here."
+    "message": "Keep track of the tokens you’ve bought with your GoETZ account. If you bought tokens using a different account, those tokens will not appear here."
   },
   "total": {
     "message": "总量"
@@ -934,7 +934,7 @@
     "message": "欢迎回来!"
   },
   "welcomeBeta": {
-    "message": "欢迎使用 Seed 测试版"
+    "message": "欢迎使用 GoETZ 测试版"
   },
   "whatsThis": {
     "message": "这是什么？"

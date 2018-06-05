@@ -115,22 +115,43 @@ NetworkDropdown.prototype.render = function () {
     h(
       DropdownMenuItem,
       {
+        key: 'main',
+        closeMenu: () => this.props.hideNetworkDropdown(),
+        onClick: () => props.setProviderType('mainnet'),
+        style: { ...dropdownMenuItemStyle, borderColor: '#038789' },
+      },
+      [
+        providerType === 'mainnet' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
+        h(NetworkDropdownIcon, {
+          backgroundColor: '#29B6AF', // $java
+          isSelected: providerType === 'mainnet',
+        }),
+        h('span.network-name-item', {
+          style: {
+            color: providerType === 'mainnet' ? '#ffffff' : '#9b9b9b',
+          },
+        }, this.context.t('mainnet')),
+      ]
+    ),
+    h(
+      DropdownMenuItem,
+      {
         key: 'default',
         closeMenu: () => this.props.hideNetworkDropdown(),
         onClick: () => props.setProviderType('localhost'),
-        style: { ...dropdownMenuItemStyle, borderColor: '#038789' },
+        style: dropdownMenuItemStyle,
       },
       [
         providerType === 'localhost' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
         h(NetworkDropdownIcon, {
-          backgroundColor: '#29B6AF', // $java
           isSelected: providerType === 'localhost',
+          innerBorder: '1px solid #9b9b9b',
         }),
         h('span.network-name-item', {
           style: {
             color: providerType === 'localhost' ? '#ffffff' : '#9b9b9b',
           },
-        }, this.context.t('mainnet')),
+        }, this.context.t('localhost')),
       ]
     ),
 
@@ -188,7 +209,7 @@ NetworkDropdown.prototype.renderCommonRpc = function (rpcList, provider) {
   const rpcTarget = provider.rpcTarget
 
   return rpcList.map((rpc) => {
-    if ((rpc === 'http://localhost:8545') || (rpc === rpcTarget)) {
+    if ((rpc === 'http://localhost:9646') || (rpc === rpcTarget)) {
       return null
     } else {
       return h(
@@ -226,7 +247,7 @@ NetworkDropdown.prototype.renderCustomOption = function (provider) {
 
   switch (rpcTarget) {
 
-    case 'http://localhost:8545':
+    case 'http://localhost:9646':
       return null
 
     default:

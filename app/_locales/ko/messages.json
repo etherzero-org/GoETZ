@@ -333,7 +333,7 @@
     "message": "토큰 로딩중..."
   },
   "localhost": {
-    "message": "로컬호스트 8545"
+    "message": "로컬호스트 9646"
   },
   "logout": {
     "message": "로그아웃"

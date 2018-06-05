@@ -26,18 +26,18 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 // setup web3
 //
 
-if (typeof window.web3_etz !== 'undefined') {
-  throw new Error(`Seeddetected another web3.
-     Seedwill not work reliably with another web3 extension.
-     This usually happens if you have two MetaMasks installed,
-     or Seedand another web3 extension. Please remove one
+if (typeof window.web3 !== 'undefined') {
+  throw new Error(`GoETZ detected another web3.
+     GoETZ will not work reliably with another web3 extension.
+     This usually happens if you have two GoETZ installed,
+     or GoETZ and another web3 extension. Please remove one
      and try again.`)
 }
 var web3 = new Web3(inpageProvider)
 web3.setProvider = function () {
-  log.debug('Seed- overrode web3.setProvider')
+  log.debug('GoETZ- overrode web3.setProvider')
 }
-log.debug('Seed- injected web3')
+log.debug('GoETZ- injected web3')
 // export global web3, with usage-detection
 setupDappAutoReload(web3, inpageProvider.publicConfigStore)
 
@@ -61,7 +61,7 @@ function cleanContextForImports () {
   try {
     global.define = undefined
   } catch (_) {
-    console.warn('Seed- global.define could not be deleted.')
+    console.warn('GoETZ- global.define could not be deleted.')
   }
 }
 
@@ -72,6 +72,6 @@ function restoreContextAfterImports () {
   try {
     global.define = __define
   } catch (_) {
-    console.warn('Seed- global.define could not be overwritten.')
+    console.warn('GoETZ- global.define could not be overwritten.')
   }
 }

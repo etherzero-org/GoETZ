@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "short_name": "__MSG_appName__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "author": "http://etherzero.org",
   "description": "__MSG_appDescription__",
@@ -37,7 +37,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "Seed",
+    "default_title": "GoETZ",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -58,15 +58,15 @@
     "storage",
     "unlimitedStorage",
     "clipboardWrite",
-    "http://localhost:8545/",
-    "https://*.infura.io/"
+    "http://localhost:9646/",
+    "https://rpc.etherzero.org:443/"
   ],
   "web_accessible_resources": [
     "inpage.js"
   ],
   "externally_connectable": {
     "matches": [
-      "https://metamask.io/*"
+      "https://rpc.etherzero.org:443/*"
     ]
   }
 }

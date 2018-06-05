@@ -214,7 +214,9 @@ class App extends Component {
 
     let name
 
-    if (providerName === 'localhost') {
+    console.log('XXXX',providerName);
+
+    if (providerName === 'mainnet') {
       name = this.context.t('connectingToMainnet')
     } else if (providerName === 'ropsten') {
       name = this.context.t('connectingToRopsten')
@@ -235,7 +237,7 @@ class App extends Component {
 
     let name
 
-    if (providerName === 'localhost') {
+    if (providerName === 'mainnet') {
       name = this.context.t('mainnet')
     } else if (providerName === 'ropsten') {
       name = this.context.t('ropsten')

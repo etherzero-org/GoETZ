@@ -34,7 +34,7 @@
     "description": "आवेदन का विवरण"
   },
   "appName": {
-    "message": "मेटामास्क/Seed",
+    "message": "मेटामास्क/GoETZ",
     "description": "एप्लिकेशन का नाम"
   },
   "attemptingConnect": {
@@ -420,7 +420,7 @@
     "message": "टोकन लोड हो रहा है ....."
   },
   "localhost": {
-    "message": "स्थानीयहोस्ट 8545"
+    "message": "स्थानीयहोस्ट 9646"
   },
   "login": {
     "message": "लॉग इन करें"

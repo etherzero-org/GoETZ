@@ -4,15 +4,15 @@ const log = require('loglevel')
 const seedPhraseVerifier = {
 
   /**
-   * Verifies if the seed words can restore the accounts.
+   * Verifies if the GoETZ words can restore the accounts.
    *
    * Key notes:
-   * - The seed words can recreate the primary keyring and the accounts belonging to it.
+   * - The GoETZ words can recreate the primary keyring and the accounts belonging to it.
    * - The created accounts in the primary keyring are always the same.
    * - The keyring always creates the accounts in the same sequence.
    *
    * @param {array} createdAccounts The accounts to restore
-   * @param {string} seedWords The seed words to verify
+   * @param {string} seedWords The GoETZ words to verify
    * @returns {Promise<void>} Promises undefined
    *
   */

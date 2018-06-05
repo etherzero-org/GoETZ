@@ -62,7 +62,7 @@ function setupStreams () {
   )
 
   // setup local multistream channels
-  const mux = new ObjectMultiplex()
+  // const mux = new ObjectMultiplex()
   mux.setMaxListeners(25)
 
   pump(
@@ -192,6 +192,6 @@ function blacklistedDomainCheck () {
  * Redirects the current page to a phishing information page
  */
 function redirectToPhishingWarning () {
-  console.log('Seed- redirecting to phishing warning')
+  console.log('GoETZ- redirecting to phishing warning')
   window.location.href = 'https://metamask.io/phishing.html'
 }

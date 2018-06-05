@@ -359,7 +359,7 @@ function confirmSeedWords () {
           return reject(err)
         }
 
-        log.info('Seed word cache cleared. ' + account)
+        log.info('GoETZ word cache cleared. ' + account)
         dispatch(actions.showAccountsPage())
         resolve(account)
       })

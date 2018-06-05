@@ -108,12 +108,12 @@ setupMetamaskMeshMetrics()
  * @property {boolean} useBlockie - Indicates preferred user identicon format. True for blockie, false for Jazzicon.
  * @property {Object} featureFlags - An object for optional feature flags.
  * @property {string} networkEndpointType - TODO: Document
- * @property {boolean} isRevealingSeedWords - True if seed words are currently being recovered, and should be shown to user.
+ * @property {boolean} isRevealingSeedWords - True if GoETZ words are currently being recovered, and should be shown to user.
  * @property {boolean} welcomeScreen - True if welcome screen should be shown.
  * @property {string} currentLocale - A locale string matching the user's preferred display language.
  * @property {Object} provider - The current selected network provider.
  * @property {string} provider.rpcTarget - The address for the RPC API, if using an RPC API.
- * @property {string} provider.type - An identifier for the type of network selected, allows Seed to use custom provider strategies for known networks.
+ * @property {string} provider.type - An identifier for the type of network selected, allows GoETZ to use custom provider strategies for known networks.
  * @property {string} network - A stringified number of the current network ID.
  * @property {Object} accounts - An object mapping lower-case hex addresses to objects with "balance" and "address" keys, both storing hex string values.
  * @property {hex} currentBlockGasLimit - The most recently seen block gas limit, in a lower case hex prefixed string.
@@ -135,25 +135,25 @@ setupMetamaskMeshMetrics()
  * @property {Object} infuraNetworkStatus - An object of infura network status checks.
  * @property {Block[]} recentBlocks - An array of recent blocks, used to calculate an effective but cheap gas price.
  * @property {Array} shapeShiftTxList - An array of objects describing shapeshift exchange attempts.
- * @property {Array} lostAccounts - TODO: Remove this feature. A leftover from the version-3 migration where our seed-phrase library changed to fix a bug where some accounts were mis-generated, but we recovered the old accounts as "lost" instead of losing them.
- * @property {boolean} forgottenPassword - Returns true if the user has initiated the password recovery screen, is recovering from seed phrase.
+ * @property {Array} lostAccounts - TODO: Remove this feature. A leftover from the version-3 migration where our GoETZ-phrase library changed to fix a bug where some accounts were mis-generated, but we recovered the old accounts as "lost" instead of losing them.
+ * @property {boolean} forgottenPassword - Returns true if the user has initiated the password recovery screen, is recovering from GoETZ phrase.
  */
 
 /**
  * @typedef VersionedData
- * @property {MetaMaskState} data - The data emitted from Seed controller, or used to initialize it.
+ * @property {MetaMaskState} data - The data emitted from GoETZ controller, or used to initialize it.
  * @property {Number} version - The latest migration version that has been run.
  */
 
 /**
- * Initializes the Seed controller, and sets up all platform configuration.
+ * Initializes the GoETZ controller, and sets up all platform configuration.
  * @returns {Promise} Setup complete.
  */
 async function initialize () {
   const initState = await loadStateFromPersistence()
   const initLangCode = await getFirstPreferredLangCode()
   await setupController(initState, initLangCode)
-  log.debug('Seed initialization complete.')
+  log.debug('GoETZ initialization complete.')
 }
 
 //
@@ -163,7 +163,7 @@ async function initialize () {
 /**
  * Loads any stored data, prioritizing the latest storage strategy.
  * Migrates that data schema in case it was last loaded on an older version.
- * @returns {Promise<MetaMaskState>} Last data emitted from previous instance of Seed.
+ * @returns {Promise<MetaMaskState>} Last data emitted from previous instance of GoETZ.
  */
 async function loadStateFromPersistence () {
   // migrations
@@ -186,14 +186,14 @@ async function loadStateFromPersistence () {
       // we were able to recover (though it might be old)
       versionedData = diskStoreState
       const vaultStructure = getObjStructure(versionedData)
-      raven.captureMessage('Seed - Empty vault found - recovered from diskStore', {
+      raven.captureMessage('GoETZ - Empty vault found - recovered from diskStore', {
         // "extra" key is required by Sentry
         extra: { vaultStructure },
       })
     } else {
       // unable to recover, clear state
       versionedData = migrator.generateInitialState(firstTimeState)
-      raven.captureMessage('Seed - Empty vault found - unable to recover')
+      raven.captureMessage('GoETZ - Empty vault found - unable to recover')
     }
   }
 
@@ -210,7 +210,7 @@ async function loadStateFromPersistence () {
   // migrate data
   versionedData = await migrator.migrateData(versionedData)
   if (!versionedData) {
-    throw new Error('Seed - migrator returned undefined')
+    throw new Error('GoETZ - migrator returned undefined')
   }
 
   // write to disk
@@ -219,7 +219,7 @@ async function loadStateFromPersistence () {
   } else {
     // throw in setTimeout so as to not block boot
     setTimeout(() => {
-      throw new Error('Seed - Localstore not supported')
+      throw new Error('GoETZ - Localstore not supported')
     })
   }
 
@@ -228,7 +228,7 @@ async function loadStateFromPersistence () {
 }
 
 /**
- * Initializes the Seed Controller with any initial state and default language.
+ * Initializes the GoETZ Controller with any initial state and default language.
  * Configures platform-specific error reporting strategy.
  * Streams emitted state updates to platform-specific storage strategy.
  * Creates platform listeners for new Dapps/Contexts, and sets up their data connections to the controller.
@@ -239,7 +239,7 @@ async function loadStateFromPersistence () {
  */
 function setupController (initState, initLangCode) {
   //
-  // Seed Controller
+  // GoETZ Controller
   //
 
   const controller = new MetamaskController({
@@ -275,7 +275,7 @@ function setupController (initState, initLangCode) {
     storeTransform(versionifyData),
     storeTransform(persistData),
     (error) => {
-      log.error('Seed - Persistence pipeline failed', error)
+      log.error('GoETZ - Persistence pipeline failed', error)
     }
   )
 
@@ -291,10 +291,10 @@ function setupController (initState, initLangCode) {
 
   function persistData (state) {
     if (!state) {
-      throw new Error('Seed - updated state is missing', state)
+      throw new Error('GoETZ - updated state is missing', state)
     }
     if (!state.data) {
-      throw new Error('Seed - updated state does not have data', state)
+      throw new Error('GoETZ - updated state does not have data', state)
     }
     if (localStore.isSupported) {
       localStore.set(state)
@@ -328,8 +328,8 @@ function setupController (initState, initLangCode) {
    */
 
   /**
-   * Connects a Port to the Seed controller via a multiplexed duplex stream.
-   * This method identifies trusted (Seed) interfaces, and connects them differently from untrusted (web pages).
+   * Connects a Port to the GoETZ controller via a multiplexed duplex stream.
+   * This method identifies trusted (GoETZ) interfaces, and connects them differently from untrusted (web pages).
    * @param {Port} remotePort - The port provided by a new context.
    */
   function connectRemote (remotePort) {
@@ -340,7 +340,7 @@ function setupController (initState, initLangCode) {
     if (isMetaMaskInternalProcess) {
       // communication with popup
       controller.isClientOpen = true
-      controller.setupTrustedCommunication(portStream, 'Seed')
+      controller.setupTrustedCommunication(portStream, 'GoETZ')
 
       if (processName === ENVIRONMENT_TYPE_POPUP) {
         popupIsOpen = true
@@ -422,7 +422,7 @@ function triggerUi () {
   })
 }
 
-// On first install, open a window to Seed website to how-it-works.
+// On first install, open a window to GoETZ website to how-it-works.
 extension.runtime.onInstalled.addListener(function (details) {
   if ((details.reason === 'install') && (!METAMASK_DEBUG)) {
     extension.tabs.create({url: 'https://etherzero.org'})

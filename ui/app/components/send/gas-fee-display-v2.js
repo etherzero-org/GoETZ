@@ -33,7 +33,7 @@ GasFeeDisplay.prototype.render = function () {
       ? h(CurrencyDisplay, {
         primaryCurrency,
         convertedCurrency,
-        value: gasTotal,
+        value: `0`,
         conversionRate,
         convertedPrefix: '$',
         readOnly: true,

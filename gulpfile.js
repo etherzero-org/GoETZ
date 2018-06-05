@@ -169,7 +169,7 @@ gulp.task('manifest:opera', function() {
       "tabs",
       "clipboardWrite",
       "clipboardRead",
-      "http://localhost:8545/"
+      "http://localhost:9646/"
     ]
     return json
   }))
@@ -463,7 +463,7 @@ gulp.task('dist',
 function zipTask(target) {
   return () => {
     return gulp.src(`dist/${target}/**`)
-    .pipe(zip(`Seed-${target}-${manifest.version}.zip`))
+    .pipe(zip(`GoETZ-${target}-${manifest.version}.zip`))
     .pipe(gulp.dest('builds'))
   }
 }

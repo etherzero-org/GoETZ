@@ -50,7 +50,7 @@ AccountImportSubview.prototype.render = function () {
           padding: '5px 15px 0px 15px',
         },
       }, [
-        h('span', 'Imported accounts will not be associated with your originally created Seed account seedphrase. Learn more about imported accounts '),
+        h('span', 'Imported accounts will not be associated with your originally created GoETZ account seedphrase. Learn more about imported accounts '),
         h('span', {
           style: {
             color: 'rgba(128,185,242,1)',

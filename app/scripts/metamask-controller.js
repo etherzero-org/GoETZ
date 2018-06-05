@@ -1,6 +1,6 @@
 /**
  * @file      The central metamask controller. Aggregates other controllers and exports an api.
- * @copyright Copyright (c) 2018 Seed
+ * @copyright Copyright (c) 2018 GoETZ
  * @license   MIT
  */
 
@@ -231,7 +231,7 @@ module.exports = class MetamaskController extends EventEmitter {
     const providerOpts = {
       static: {
         eth_syncing: false,
-        web3_clientVersion: `Seed/v${version}`,
+        web3_clientVersion: `GoETZ/v${version}`,
         eth_sendTransaction: (payload, next, end) => {
           const origin = payload.origin
           const txParams = payload.params[0]
@@ -538,7 +538,7 @@ module.exports = class MetamaskController extends EventEmitter {
    *
    * Called when the first account is created and on unlocking the vault.
    *
-   * @returns {Promise<string>} Seed phrase to be confirmed by the user.
+   * @returns {Promise<string>} GoETZ phrase to be confirmed by the user.
    */
   async verifySeedPhrase () {
 
@@ -637,9 +637,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(new Error('Seed Message Signature: User denied message signature.'))
+          return cb(new Error('GoETZ Message Signature: User denied message signature.'))
         default:
-          return cb(new Error(`Seed Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+          return cb(new Error(`GoETZ Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
       }
     })
   }
@@ -697,7 +697,7 @@ module.exports = class MetamaskController extends EventEmitter {
    */
   newUnsignedPersonalMessage (msgParams, cb) {
     if (!msgParams.from) {
-      return cb(new Error('Seed Message Signature: from field is required.'))
+      return cb(new Error('GoETZ Message Signature: from field is required.'))
     }
 
     const msgId = this.personalMessageManager.addUnapprovedMessage(msgParams)
@@ -708,9 +708,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(new Error('Seed Message Signature: User denied message signature.'))
+          return cb(new Error('GoETZ Message Signature: User denied message signature.'))
         default:
-          return cb(new Error(`Seed Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+          return cb(new Error(`GoETZ Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
       }
     })
   }
@@ -776,9 +776,9 @@ module.exports = class MetamaskController extends EventEmitter {
         case 'signed':
           return cb(null, data.rawSig)
         case 'rejected':
-          return cb(new Error('Seed Message Signature: User denied message signature.'))
+          return cb(new Error('GoETZ Message Signature: User denied message signature.'))
         default:
-          return cb(new Error(`Seed Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+          return cb(new Error(`GoETZ Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
       }
     })
   }
@@ -822,7 +822,7 @@ module.exports = class MetamaskController extends EventEmitter {
   }
 
   // ---------------------------------------------------------------------------
-  // Seed Version 3 Migration Account Restauration Methods
+  // GoETZ Version 3 Migration Account Restauration Methods
 
   /**
    * A legacy method (probably dead code) that was used when we swapped out our
@@ -954,7 +954,7 @@ module.exports = class MetamaskController extends EventEmitter {
   setupUntrustedCommunication (connectionStream, originDomain) {
     // Check if new connection is blacklisted
     if (this.blacklistController.checkForPhishing(originDomain)) {
-      log.debug('Seed - sending phishing warning for', originDomain)
+      log.debug('GoETZ - sending phishing warning for', originDomain)
       this.sendPhishingWarning(connectionStream, originDomain)
       return
     }
@@ -1076,7 +1076,7 @@ module.exports = class MetamaskController extends EventEmitter {
   }
 
   /**
-   * A method for emitting the full Seed state to all registered listeners.
+   * A method for emitting the full GoETZ state to all registered listeners.
    * @private
    */
   privateSendUpdate () {
@@ -1222,7 +1222,7 @@ module.exports = class MetamaskController extends EventEmitter {
   }
 
   /**
-   * A method for recording whether the Seed user interface is open or not.
+   * A method for recording whether the GoETZ user interface is open or not.
    * @private
    * @param {boolean} open
    */

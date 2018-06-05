@@ -223,7 +223,7 @@ class Settings extends Component {
                   if (err) {
                     this.state.dispatch(actions.displayWarning(this.context.t('stateLogError')))
                   } else {
-                    exportAsFile('Seed State Logs.json', result)
+                    exportAsFile('GoETZ State Logs.json', result)
                   }
                 })
               },

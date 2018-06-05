@@ -34,7 +34,7 @@
     "description": "La descrizione dell'applicazione"
   },
   "appName": {
-    "message": "Seed",
+    "message": "GoETZ",
     "description": "Il nome dell'applicazione"
   },
   "attemptingConnect": {
@@ -72,7 +72,7 @@
     "message": "Prendi in presisito con Dharma (Beta)"
   },
   "builtInCalifornia": {
-    "message": "Seed è progettato e costruito in California."
+    "message": "GoETZ è progettato e costruito in California."
   },
   "buy": {
     "message": "Compra"
@@ -206,7 +206,7 @@
     "message": "Deposita con ShapeShift"
   },
   "depositShapeShiftExplainer": {
-    "message": "Se possiedi altre criptomonete, puoi scambiare e depositare ETZ direttamente nel tuo portafoglio Seed. Nessun account richiesto."
+    "message": "Se possiedi altre criptomonete, puoi scambiare e depositare ETZ direttamente nel tuo portafoglio GoETZ. Nessun account richiesto."
   },
   "details": {
     "message": "Dettagli"
@@ -351,7 +351,7 @@
     "message": "Importa Account"
   },
   "importAccountMsg": {
-    "message":" Gli account importati non saranno associati alla frase seed originariamente creata con Seed. Impara di più sugli account importati "    
+    "message":" Gli account importati non saranno associati alla frase seed originariamente creata con GoETZ. Impara di più sugli account importati "    
   },
   "importAnAccount": {
     "message": "Importa un account"
@@ -420,7 +420,7 @@
     "message": "Caricamento Tokens..."
   },
   "localhost": {
-    "message": "ETZ network"
+    "message": "Localhost 9646"
   },
   "login": {
     "message": "Connetti"
@@ -441,7 +441,7 @@
     "message": "Messaggio"
   },
   "metamaskDescription": {
-    "message": "Seed è una cassaforte sicura per identità su Etherzero."
+    "message": "GoETZ è una cassaforte sicura per identità su Etherzero."
   },
   "min": {
     "message": "Minimo"
@@ -453,7 +453,7 @@
     "message": "Devi selezionare almeno un token."
   },
   "needEtherInWallet": {
-    "message": "Per interagire con applicazioni decentralizzate con Seed, devi possedere ETZ nel tuo portafoglio."
+    "message": "Per interagire con applicazioni decentralizzate con GoETZ, devi possedere ETZ nel tuo portafoglio."
   },
   "needImportFile": {
     "message": "Devi selezionare un file da importare.",
@@ -590,7 +590,7 @@
     "message": "Riprova con un prezzo del Gas maggiore qui"
   },
   "revealSeedWords": {
-    "message": "Rivela Frase Seed"
+    "message": "Rivela Frase GoETZ"
   },
   "revealSeedWordsWarning": {
     "message": "Non ripristinare la tua frase seed in pubblico!. Queste parole possono essere usate per rubare il tuo account."
@@ -616,7 +616,7 @@
     "description": "Processo per esportare un account"
   },
   "saveSeedAsFile": {
-    "message": "Salva la Frase Seed come File"
+    "message": "Salva la Frase GoETZ come File"
   },
   "search": {
     "message": "Cerca"
@@ -731,7 +731,7 @@
     "message": "Simbolo Token"
   },
   "tokenWarning1": {
-    "message": "Tieni traccia dei token che hai acquistato con il tuo account Seed. Se hai acquistato token con un account diverso, quei token non appariranno qui."
+    "message": "Tieni traccia dei token che hai acquistato con il tuo account GoETZ. Se hai acquistato token con un account diverso, quei token non appariranno qui."
   },
   "total": {
     "message": "Totale"
@@ -753,7 +753,7 @@
     "description": "Seguito da un link (qui) per vedere il bilancio dei token"
   },
   "twelveWords": {    
-    "message": "Queste 12 parole sono l'unico modo per ripristinare i tuoi account Seed. \nSalvale in un posto sicuro e segreto."
+    "message": "Queste 12 parole sono l'unico modo per ripristinare i tuoi account GoETZ. \nSalvale in un posto sicuro e segreto."
   },
   "typePassword": {
     "message": "Inserisci Password"
@@ -762,7 +762,7 @@
     "message": "Benvenuto alla nuova interfaccia (Beta)"
   },
   "uiWelcomeMessage": {
-    "message": "Stai utilizzanto la nuova interfaccia di Seed. Guarda in giro, prova nuove funzionalità come inviare token, e facci sapere se hai dei problemi."    
+    "message": "Stai utilizzanto la nuova interfaccia di GoETZ. Guarda in giro, prova nuove funzionalità come inviare token, e facci sapere se hai dei problemi."    
   },
   "unavailable": {
     "message": "Non Disponibile"
@@ -805,7 +805,7 @@
     "message": "Attenzione"
   },
   "welcomeBeta": {
-    "message": "Benvenuto nella Beta di Seed"
+    "message": "Benvenuto nella Beta di GoETZ"
   },
   "whatsThis": {
     "message": "Cos'è questo?"

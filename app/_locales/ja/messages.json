@@ -34,7 +34,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "Seed",
+    "message": "GoETZ",
     "description": "The name of the application"
   },
   "attemptingConnect": {
@@ -369,7 +369,7 @@
     "message": "トークンをロード中..."
   },
   "localhost": {
-    "message": "ETZ network"
+    "message": "Localhost 9646"
   },
   "logout": {
     "message": "ログアウト"
