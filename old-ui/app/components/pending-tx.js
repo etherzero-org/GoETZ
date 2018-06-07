@@ -68,7 +68,7 @@ PendingTx.prototype.render = function () {
 
   // Gas Price
   const gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16)
-  const gasPriceBn = hexToBn(gasPrice)
+  const gasPriceBn = hexToBn(new BN('0').toString(16))
 
   const txFeeBn = gasBn.mul(gasPriceBn)
   const valueBn = hexToBn(txParams.value)
@@ -84,6 +84,8 @@ PendingTx.prototype.render = function () {
   const showRejectAll = props.unconfTxListLength > 1
 
   this.inputs = []
+
+  console.log('LLLL',txFeeBn,valueBn,maxCost)
 
   return (
 

@@ -110,7 +110,7 @@ MetamaskInpageProvider.prototype.isMetaMask = true
 // util
 
 function logStreamDisconnectWarning (remoteLabel, err) {
-  let warningMsg = `MetamaskInpageProvider - lost connection to ${remoteLabel}`
+  let warningMsg = `GoETZInpageProvider - lost connection to ${remoteLabel}`
   if (err) warningMsg += '\n' + err.stack
   console.warn(warningMsg)
 }

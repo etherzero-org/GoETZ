@@ -36,7 +36,7 @@ function setupInjection () {
     // append as first child
     container.insertBefore(scriptTag, container.children[0])
   } catch (e) {
-    console.error('Seedinjection failed.', e)
+    console.error('GoETZ injection failed.', e)
   }
 }
 
@@ -58,24 +58,24 @@ function setupStreams () {
     pageStream,
     pluginStream,
     pageStream,
-    (err) => logStreamDisconnectWarning('SeedContentscript Forwarding', err)
+    (err) => logStreamDisconnectWarning('GoETZ Contentscript Forwarding', err)
   )
 
   // setup local multistream channels
-  // const mux = new ObjectMultiplex()
+  const mux = new ObjectMultiplex()
   mux.setMaxListeners(25)
 
   pump(
     mux,
     pageStream,
     mux,
-    (err) => logStreamDisconnectWarning('SeedInpage', err)
+    (err) => logStreamDisconnectWarning('GoETZ Inpage', err)
   )
   pump(
     mux,
     pluginStream,
     mux,
-    (err) => logStreamDisconnectWarning('SeedBackground', err)
+    (err) => logStreamDisconnectWarning('GoETZ Background', err)
   )
 
   // connect ping stream
@@ -84,7 +84,7 @@ function setupStreams () {
     mux,
     pongStream,
     mux,
-    (err) => logStreamDisconnectWarning('SeedPingPongStream', err)
+    (err) => logStreamDisconnectWarning('GoETZ PingPongStream', err)
   )
 
   // connect phishing warning stream
@@ -104,7 +104,7 @@ function setupStreams () {
  * @param {Error} err Stream connection error
  */
 function logStreamDisconnectWarning (remoteLabel, err) {
-  let warningMsg = `MetamaskContentscript - lost connection to ${remoteLabel}`
+  let warningMsg = `GoETZContentscript - lost connection to ${remoteLabel}`
   if (err) warningMsg += '\n' + err.stack
   console.warn(warningMsg)
 }
