@@ -88,12 +88,12 @@ function setupStreams () {
   )
 
   // connect phishing warning stream
-  const phishingStream = mux.createStream('phishingA')
+  const phishingStream = mux.createStream('phishing_ETZ')
   phishingStream.once('data', redirectToPhishingWarning)
 
   // ignore unused channels (handled by background, inpage)
-  mux.ignoreStream('providerA')
-  mux.ignoreStream('publicConfigA')
+  mux.ignoreStream('provider_ETZ')
+  mux.ignoreStream('publicConfig_ETZ')
 }
 
 

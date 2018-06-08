@@ -24,19 +24,19 @@ function MetamaskInpageProvider (connectionStream) {
   self.publicConfigStore = new LocalStorageStore({ storageKey: 'GoETZ-Config' })
 
   pump(
-    mux.createStream('publicConfigA'),
+    mux.createStream('publicConfig_ETZ'),
     asStream(self.publicConfigStore),
     (err) => logStreamDisconnectWarning('GoETZ PublicConfigStore', err)
   )
 
   // ignore phishing warning message (handled elsewhere)
-  mux.ignoreStream('phishingA')
+  mux.ignoreStream('phishing_ETZ')
 
   // connect to async provider
   const streamMiddleware = createStreamMiddleware()
   pump(
     streamMiddleware.stream,
-    mux.createStream('providerA'),
+    mux.createStream('provider_ETZ'),
     streamMiddleware.stream,
     (err) => logStreamDisconnectWarning('GoETZ RpcProvider', err)
   )
