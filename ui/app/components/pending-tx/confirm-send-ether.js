@@ -142,8 +142,6 @@ ConfirmSendEther.prototype.updateComponentSendErrors = function (prevProps) {
     conversionRate !== oldConversionRate,
   ].some(x => Boolean(x))
 
-  console.log('BBBB',shouldUpdateBalanceSendErrors);
-
   if (shouldUpdateBalanceSendErrors) {
     const balanceIsSufficient = this.isBalanceSufficient(txMeta)
     updateSendErrors({

@@ -33,17 +33,17 @@ if (typeof window.web3_etz !== 'undefined') {
      or GoETZ and another web3 extension. Please remove one
      and try again.`)
 }
-var web3 = new Web3(inpageProvider)
-web3.setProvider = function () {
+var web3_etz = new Web3(inpageProvider)
+web3_etz.setProvider = function () {
   log.debug('GoETZ- overrode web3.setProvider')
 }
 log.debug('GoETZ- injected web3')
 // export global web3, with usage-detection
-setupDappAutoReload(web3, inpageProvider.publicConfigStore)
+setupDappAutoReload(web3_etz, inpageProvider.publicConfigStore)
 
 // set web3 defaultAccount
 inpageProvider.publicConfigStore.subscribe(function (state) {
-  web3.eth.defaultAccount = state.selectedAddress
+  web3_etz.eth.defaultAccount = state.selectedAddress
 })
 
 // need to make sure we aren't affected by overlapping namespaces

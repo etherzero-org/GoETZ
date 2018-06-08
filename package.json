@@ -142,7 +142,7 @@
     "mkdirp": "^0.5.1",
     "multiplex": "^6.7.0",
     "number-to-bn": "^1.7.0",
-    "obj-multiplex": "^1.0.0",
+    "obj-multiplex": "git+https://github.com/etherzero-org/obj-multiplex.git",
     "obs-store": "^3.0.0",
     "percentile": "^1.2.0",
     "pify": "^3.0.0",
