@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "short_name": "__MSG_appName__",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifest_version": 2,
   "author": "http://etherzero.org",
   "description": "__MSG_appDescription__",
@@ -21,7 +21,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "webextension@metamask.io"
+      "id": "webextension@goetz.io"
     }
   },
   "default_locale": "en",
