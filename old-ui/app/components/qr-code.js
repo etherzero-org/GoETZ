@@ -25,7 +25,7 @@ function QrCodeView () {
 QrCodeView.prototype.render = function () {
   const props = this.props
   const Qr = props.Qr
-  const address = `${isHexPrefixed(Qr.data) ? 'ethereum:' : ''}${Qr.data}`
+  const address = `${isHexPrefixed(Qr.data) ? '' : ''}${Qr.data}`
   const qrImage = qrCode(4, 'M')
   qrImage.addData(address)
   qrImage.make()
