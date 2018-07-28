@@ -68,11 +68,17 @@ PendingTx.prototype.render = function () {
 
   // Gas Price
   const gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16)
-  const gasPriceBn = hexToBn(new BN('0').toString(16))
+  const gasPriceBn = hexToBn(gasPrice)
 
-  const txFeeBn = gasBn.mul(gasPriceBn)
+  console.log("__gasPriceBn",gasPriceBn);
+
+  const txFeeBn = new BN('0')
   const valueBn = hexToBn(txParams.value)
   const maxCost = txFeeBn.add(valueBn)
+
+  console.log("__valueBn",valueBn);
+  console.log("__maxCost",maxCost);
+  console.log("__txFeeBn",txFeeBn)
 
   const dataLength = txParams.data ? (txParams.data.length - 2) / 2 : 0
 
@@ -411,6 +417,7 @@ PendingTx.prototype.gasPriceChanged = function (newBN, valid) {
   log.info(`Gas price changed to: ${newBN.toString(10)}`)
   const txMeta = this.gatherTxMeta()
   txMeta.txParams.gasPrice = '0x' + newBN.toString('hex')
+  // txMeta.txParams.gasPrice = '0x' //更改GWEI时不需要手续费
   this.setState({
     txData: clone(txMeta),
     valid,
