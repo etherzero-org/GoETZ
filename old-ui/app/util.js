@@ -27,6 +27,7 @@ module.exports = {
   numericBalance: numericBalance,
   parseBalance: parseBalance,
   formatBalance: formatBalance,
+  formatPower: formatPower,
   generateBalanceObject: generateBalanceObject,
   dataSize: dataSize,
   readableDate: readableDate,
@@ -120,6 +121,30 @@ function formatBalance (balance, decimalsToKeep, needsParse = true) {
   } else {
     afterDecimal += Array(decimalsToKeep).join('0')
     formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep) + ' ETZ'
+  }
+  return formatted
+}
+
+// Takes wei hex, returns an object with three properties.
+// Its "formatted" property is what we generally use to render values.
+function formatPower (balance, decimalsToKeep, needsParse = true) {
+  var parsed = needsParse ? parseBalance(balance) : balance.split('.')
+  var beforeDecimal = parsed[0]
+  var afterDecimal = parsed[1]
+  var formatted = 'None'
+  if (decimalsToKeep === undefined) {
+    if (beforeDecimal === '0') {
+      if (afterDecimal !== '0') {
+        var sigFigs = afterDecimal.match(/^0*(.{2})/) // default: grabs 2 most significant digits
+        if (sigFigs) { afterDecimal = sigFigs[0] }
+        formatted = '0.' + afterDecimal
+      }
+    } else {
+      formatted = beforeDecimal + '.' + afterDecimal.slice(0, 3)
+    }
+  } else {
+    afterDecimal += Array(decimalsToKeep).join('0')
+    formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep)
   }
   return formatted
 }

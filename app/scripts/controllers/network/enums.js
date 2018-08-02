@@ -5,7 +5,7 @@ const MAINNET = 'mainnet'
 const LOCALHOST = 'localhost'
 
 const ROPSTEN_CODE = 3
-const RINKEYBY_CODE = 88
+const RINKEYBY_CODE = 100
 const KOVAN_CODE = 42
 
 const ROPSTEN_DISPLAY_NAME = 'ETZ Network'

@@ -27,6 +27,7 @@ const NoticeController = require('./notice-controller')
 const ShapeShiftController = require('./controllers/shapeshift')
 const AddressBookController = require('./controllers/address-book')
 const InfuraController = require('./controllers/infura')
+const PowerController = require('./controllers/power')
 const BlacklistController = require('./controllers/blacklist')
 const RecentBlocksController = require('./controllers/recent-blocks')
 const MessageManager = require('./lib/message-manager')
@@ -160,6 +161,13 @@ module.exports = class MetamaskController extends EventEmitter {
     })
     this.txController.on('newUnapprovedTx', opts.showUnapprovedTx.bind(opts))
 
+    // power controller
+    this.powerController = new PowerController({
+      initState:initState.PowerController,
+      address: this.preferencesController.getSelectedAddress()
+    })
+    this.powerController.schedulePowerNetworkCheck()
+
     // computed balances (accounting for pending transactions)
     this.balancesController = new BalancesController({
       accountTracker: this.accountTracker,
@@ -201,6 +209,7 @@ module.exports = class MetamaskController extends EventEmitter {
       ShapeShiftController: this.shapeshiftController.store,
       NetworkController: this.networkController.store,
       InfuraController: this.infuraController.store,
+      PowerController:this.powerController.store
     })
 
     this.memStore = new ComposableObservableStore(null, {
@@ -220,6 +229,7 @@ module.exports = class MetamaskController extends EventEmitter {
       NoticeController: this.noticeController.memStore,
       ShapeshiftController: this.shapeshiftController.store,
       InfuraController: this.infuraController.store,
+      PowerController: this.powerController.store
     })
     this.memStore.subscribe(this.sendUpdate.bind(this))
   }

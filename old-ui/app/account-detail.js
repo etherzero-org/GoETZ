@@ -7,6 +7,7 @@ const actions = require('../../ui/app/actions')
 const valuesFor = require('./util').valuesFor
 const Identicon = require('./components/identicon')
 const EthBalance = require('./components/eth-balance')
+const PowerLabel = require('./components/power')
 const TransactionList = require('./components/transaction-list')
 const ExportAccountView = require('./components/account-export')
 const ethUtil = require('ethereumjs-util')
@@ -18,6 +19,7 @@ const AccountDropdowns = require('./components/account-dropdowns').AccountDropdo
 module.exports = connect(mapStateToProps)(AccountDetailScreen)
 
 function mapStateToProps (state) {
+  console.log("PPP:",state)
   return {
     metamask: state.metamask,
     identities: state.metamask.identities,
@@ -33,6 +35,7 @@ function mapStateToProps (state) {
     currentAccountTab: state.metamask.currentAccountTab,
     tokens: state.metamask.tokens,
     computedBalances: state.metamask.computedBalances,
+    powers: state.metamask.power
   }
 }
 
@@ -47,7 +50,7 @@ AccountDetailScreen.prototype.render = function () {
   var checksumAddress = selected && ethUtil.toChecksumAddress(selected)
   var identity = props.identities[selected]
   var account = props.accounts[selected]
-  const { network, conversionRate, currentCurrency } = props
+  const { network, conversionRate, currentCurrency,powers } = props
 
   return (
 
@@ -181,17 +184,28 @@ AccountDetailScreen.prototype.render = function () {
             alignItems: 'flex-start',
           },
         }, [
-
+          h(PowerLabel, {
+            value: account && account.balance,
+            conversionRate,
+            currentCurrency,
+            powers,
+            style: {
+              borderStyle: 'solid',
+              borderWidth: '2px',
+              borderColor: 'rgba(128,185,242,1)',
+              width: '130px'
+            },
+          }),
           h(EthBalance, {
             value: account && account.balance,
             conversionRate,
             currentCurrency,
             style: {
-              lineHeight: '7px',
-              marginTop: '10px',
+              marginLeft: '-129px',
+              marginTop: '30px'
             },
           }),
-
+          
           h('.flex-grow'),
 
           h('button', {

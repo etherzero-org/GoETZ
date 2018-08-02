@@ -16,7 +16,7 @@ const {
   MAINNET,
   LOCALHOST,
 } = require('./enums')
-const MAIN_RPC_URL = 'https://rpc.etherzero.org:443'
+const MAIN_RPC_URL = 'http://35.180.86.237:9015'
 const LOCALHOST_RPC_URL = 'http://localhost:9646/'
 
 const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET]
