@@ -40,7 +40,7 @@ Network.prototype.render = function () {
       }),
       h('i.fa.fa-caret-down'),
     ])
-  } else if (parseInt(networkNumber) === 100) {
+  } else if (parseInt(networkNumber) === 90) {
     hoverText = 'ETZ Network'
     iconName = 'ethereum-network'
   } else if (providerName === 'ropsten') {

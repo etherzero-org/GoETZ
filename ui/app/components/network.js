@@ -48,7 +48,7 @@ Network.prototype.render = function () {
         src: 'images/loading.svg',
       }),
     ])
-  } else if (parseInt(networkNumber) === 88) {
+  } else if (parseInt(networkNumber) === 90) {
     hoverText = context.t('mainnet')
     iconName = 'ethereum-network'
   } else if (providerName === 'ropsten') {

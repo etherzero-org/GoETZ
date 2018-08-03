@@ -6,12 +6,14 @@ const TokenBalance = require('./token-balance')
 const Identicon = require('./identicon')
 const currencyFormatter = require('currency-formatter')
 const currencies = require('currency-formatter/currencies')
+const Powerlabel = require('./power')
 
 const { formatBalance, generateBalanceObject } = require('../util')
 
 module.exports = connect(mapStateToProps)(BalanceComponent)
 
 function mapStateToProps (state) {
+  console.log("HHH:",state);
   const accounts = state.metamask.accounts
   const network = state.metamask.network
   const selectedAddress = state.metamask.selectedAddress || Object.keys(accounts)[0]
@@ -61,7 +63,7 @@ BalanceComponent.prototype.renderTokenBalance = function () {
 
 BalanceComponent.prototype.renderBalance = function () {
   const props = this.props
-  const { shorten, account } = props
+  const { shorten, account,powers } = props
   const balanceValue = account && account.balance
   const needsParse = 'needsParse' in props ? props.needsParse : true
   const formattedBalance = balanceValue ? formatBalance(balanceValue, 6, needsParse) : '...'
@@ -72,6 +74,10 @@ BalanceComponent.prototype.renderBalance = function () {
       h('div.token-amount', {
         style: {},
       }, formattedBalance),
+      h(Powerlabel, {
+        style: {},
+        powers:powers
+      }, formattedBalance)
     ])
   }
 
@@ -79,8 +85,10 @@ BalanceComponent.prototype.renderBalance = function () {
     h('div.token-amount', {
       style: {},
     }, this.getTokenBalance(formattedBalance, shorten)),
-
-    null,
+    h(Powerlabel, {
+      style: {},
+      powers:powers
+    }, formattedBalance)
   ])
 }
 

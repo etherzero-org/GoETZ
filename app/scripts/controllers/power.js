@@ -25,8 +25,7 @@ class PowerController {
   // Responsible for retrieving the status of Infura's nodes. Can return either
   // ok, degraded, or down.
   async checkPowerNetworkStatus () {
-    // const response = await fetch(`https://openetz.org/api/v1/getPower?address=${this.address}`)
-    const response = await fetch(`https://openetz.org/etzq/api/v1/getPower?address=${this.address}`)
+    const response = await fetch(`https://easyetz.io/etzq/api/v1/getPower?address=${this.address}`)
     const parsedResponse = await response.json()
     let result = ""
     if(!parsedResponse.result){
