@@ -41,7 +41,7 @@ PowerComponent.prototype.renderPower = function (value) {
   let widthlong = 0
   let maxpower = (Math.exp(-1/(Number(value)*50)*10000) *10000000 + 200000)*18*Math.pow(10,9)/Math.pow(10,18)
   let availablepower = powers.power
-  widthlong = Math.round(Number(availablepower) / Number(maxpower) * 100)
+  widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100
 
   return (
     h(Tooltip, {

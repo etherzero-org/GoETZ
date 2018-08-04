@@ -33,7 +33,7 @@ PowerComponent.prototype.render = function () {
     if(!availablepower){
         availablepower = 0
     }
-    widthlong = Math.round(Number(availablepower) / Number(maxpower) * 100)
+    widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100
 
     return (
         h(Tooltip, {

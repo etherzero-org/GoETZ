@@ -63,7 +63,7 @@ function navigateTo (url) {
 
 function etherscanLinkFor (tokenAddress, address, network) {
   const prefix = prefixForNetwork(network)
-  return `https://explorer.etherzero.org/token/${tokenAddress}${address}`
+  return `https://etzscan.com/token/${tokenAddress}${address}`
 }
 
 function tokenFactoryFor (tokenAddress) {

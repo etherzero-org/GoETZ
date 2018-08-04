@@ -151,5 +151,5 @@ function navigateTo (url) {
 
 function etherscanLinkFor (txHash, network) {
   const prefix = prefixForNetwork(network)
-  return `https://explorer.etherzero.org/tx/${txHash}`
+  return `https://etzscan.com/tx/${txHash}`
 }
