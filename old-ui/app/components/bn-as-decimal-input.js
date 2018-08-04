@@ -34,7 +34,7 @@ BnAsDecimalInput.prototype.render = function () {
   const newMin = min && this.downsize(min.toString(10), scale)
   const newMax = max && this.downsize(max.toString(10), scale)
   const newValue = this.downsize(valueString, scale)
-
+  console.log('valueString',valueString);
   return (
     h('.flex-column', [
       h('.flex-row', {

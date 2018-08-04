@@ -19,7 +19,6 @@ const AccountDropdowns = require('./components/account-dropdowns').AccountDropdo
 module.exports = connect(mapStateToProps)(AccountDetailScreen)
 
 function mapStateToProps (state) {
-  console.log("PPP:",state)
   return {
     metamask: state.metamask,
     identities: state.metamask.identities,

@@ -70,15 +70,9 @@ PendingTx.prototype.render = function () {
   const gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16)
   const gasPriceBn = hexToBn(gasPrice)
 
-  console.log("__gasPriceBn",gasPriceBn);
-
   const txFeeBn = new BN('0')
   const valueBn = hexToBn(txParams.value)
   const maxCost = txFeeBn.add(valueBn)
-
-  console.log("__valueBn",valueBn);
-  console.log("__maxCost",maxCost);
-  console.log("__txFeeBn",txFeeBn)
 
   const dataLength = txParams.data ? (txParams.data.length - 2) / 2 : 0
 
@@ -90,8 +84,6 @@ PendingTx.prototype.render = function () {
   const showRejectAll = props.unconfTxListLength > 1
 
   this.inputs = []
-
-  console.log('LLLL',txFeeBn,valueBn,maxCost)
 
   return (
 
@@ -482,6 +474,8 @@ PendingTx.prototype.gatherTxMeta = function () {
   log.debug(`pending-tx gatherTxMeta`)
   const props = this.props
   const state = this.state
+  console.log('SSS',state);
+  console.log('SSS',props);
   const txData = clone(state.txData) || clone(props.txData)
 
   log.debug(`UI has defaulted to tx meta ${JSON.stringify(txData)}`)

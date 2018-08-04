@@ -13,7 +13,6 @@ function PowerComponent () {
 
 PowerComponent.prototype.render = function () {
   var props = this.props
-  console.log('PPP:',props)
   let { value } = props
   const { style, width } = props
   var needsParse = this.props.needsParse !== undefined ? this.props.needsParse : true
@@ -36,7 +35,6 @@ PowerComponent.prototype.render = function () {
 }
 PowerComponent.prototype.renderPower = function (value) {
   var props = this.props
-  console.log('PPP:',props)
   const { powers } = props
   let widthlong = 0
   let maxpower = (Math.exp(-1/(Number(value)*50)*10000) *10000000 + 200000)*18*Math.pow(10,9)/Math.pow(10,18)
