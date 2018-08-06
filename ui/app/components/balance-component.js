@@ -63,7 +63,7 @@ BalanceComponent.prototype.renderTokenBalance = function () {
 
 BalanceComponent.prototype.renderBalance = function () {
   const props = this.props
-  const { shorten, account,powers } = props
+  const { shorten, account, powers } = props
   const balanceValue = account && account.balance
   const needsParse = 'needsParse' in props ? props.needsParse : true
   const formattedBalance = balanceValue ? formatBalance(balanceValue, 6, needsParse) : '...'
@@ -87,7 +87,8 @@ BalanceComponent.prototype.renderBalance = function () {
     }, this.getTokenBalance(formattedBalance, shorten)),
     h(Powerlabel, {
       style: {},
-      powers:powers
+      powers:powers,
+      address:account.address
     }, formattedBalance)
   ])
 }

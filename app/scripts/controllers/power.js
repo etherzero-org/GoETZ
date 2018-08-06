@@ -7,14 +7,12 @@ const POLLING_INTERVAL = 10 * 1000
 
 class PowerController {
 
-  constructor (opts = {}) {
+  constructor(opts = {}) {
     const initState = extend({
-      power: {},
+      power: [],
     }, opts.initState)
-    const { address } = opts
-    
-    // log.debug("AAA",opts)
-    this.address = address
+
+    this.address = null
     this.store = new ObservableStore(initState)
   }
 
@@ -24,33 +22,56 @@ class PowerController {
 
   // Responsible for retrieving the status of Infura's nodes. Can return either
   // ok, degraded, or down.
-  async checkPowerNetworkStatus () {
-    const response = await fetch(`https://easyetz.io/etzq/api/v1/getPower?address=${this.address}`)
-    const parsedResponse = await response.json()
-    let result = ""
-    if(!parsedResponse.result){
-        result = "0.0036"
-    }else{
-        result = parsedResponse.result
+  async checkPowerNetworkStatus() {
+    let arr = new Array()
+    if (this.address) {
+      for(let i=0;i<this.address.length;i++){
+        const response = await fetch(`https://easyetz.io/etzq/api/v1/getPower?address=${this.address[i]}`)
+        const parsedResponse = await response.json()
+        let result = ""
+        if (!parsedResponse.result) {
+          result = "0.0036"
+        } else {
+          result = parsedResponse.result
+        }
+        const data = {
+          address: this.address[i],
+          power: result
+        }
+        arr.push(data)
+      }
+
+      this.store.updateState({
+        power: arr,
+      })
+      return null
+    } else {
+      const parsedResponse = null
+      const data = {
+        address: null,
+        power: "0.0036"
+      }
+      this.store.updateState({
+        power: [data],
+      })
+      return parsedResponse
     }
-    const data = {
-        address:this.address,
-        power:result
-    }
-    this.store.updateState({
-        power: data,
-    })
-    return parsedResponse
+
+
   }
 
-  schedulePowerNetworkCheck () {
+  getAddress(address) {
+    return this.address = address
+  }
+
+  schedulePowerNetworkCheck() {
     if (this.conversionInterval) {
       clearInterval(this.conversionInterval)
     }
 
     this.conversionInterval = setInterval(() => {
-        this.checkPowerNetworkStatus().catch(log.warn)
-        }, POLLING_INTERVAL)
+      this.checkPowerNetworkStatus().catch(log.warn)
+    }, POLLING_INTERVAL)
 
   }
 

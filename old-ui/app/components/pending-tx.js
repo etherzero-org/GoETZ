@@ -68,6 +68,7 @@ PendingTx.prototype.render = function () {
 
   // Gas Price
   const gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16)
+  console.log('gasPrice',gasPrice)
   const gasPriceBn = hexToBn(gasPrice)
 
   const txFeeBn = new BN('0')
@@ -474,8 +475,6 @@ PendingTx.prototype.gatherTxMeta = function () {
   log.debug(`pending-tx gatherTxMeta`)
   const props = this.props
   const state = this.state
-  console.log('SSS',state);
-  console.log('SSS',props);
   const txData = clone(state.txData) || clone(props.txData)
 
   log.debug(`UI has defaulted to tx meta ${JSON.stringify(txData)}`)

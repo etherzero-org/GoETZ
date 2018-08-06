@@ -43,7 +43,7 @@ const getBuyEthUrl = require('./lib/buy-eth-url')
 const Mutex = require('await-semaphore').Mutex
 const version = require('../manifest.json').version
 const BN = require('ethereumjs-util').BN
-const GWEI_BN = new BN('1000000000')
+const GWEI_BN = new BN('18000000000')
 const percentile = require('percentile')
 const seedPhraseVerifier = require('./lib/seed-phrase-verifier')
 const log = require('loglevel')
@@ -133,6 +133,7 @@ module.exports = class MetamaskController extends EventEmitter {
     // If only one account exists, make sure it is selected.
     this.keyringController.memStore.subscribe((state) => {
       const addresses = state.keyrings.reduce((res, keyring) => {
+        this.powerController.getAddress(keyring.accounts)
         return res.concat(keyring.accounts)
       }, [])
       if (addresses.length === 1) {
@@ -161,13 +162,6 @@ module.exports = class MetamaskController extends EventEmitter {
     })
     this.txController.on('newUnapprovedTx', opts.showUnapprovedTx.bind(opts))
 
-    // power controller
-    this.powerController = new PowerController({
-      initState:initState.PowerController,
-      address: this.preferencesController.getSelectedAddress()
-    })
-    this.powerController.schedulePowerNetworkCheck()
-
     // computed balances (accounting for pending transactions)
     this.balancesController = new BalancesController({
       accountTracker: this.accountTracker,
@@ -192,6 +186,13 @@ module.exports = class MetamaskController extends EventEmitter {
     this.shapeshiftController = new ShapeShiftController({
       initState: initState.ShapeShiftController,
     })
+
+    // power controller
+    this.powerController = new PowerController({
+      initState:initState.PowerController,
+      address:this.KeyringController
+    })
+    this.powerController.schedulePowerNetworkCheck()
 
     this.networkController.lookupNetwork()
     this.messageManager = new MessageManager()
@@ -359,6 +360,7 @@ module.exports = class MetamaskController extends EventEmitter {
       verifySeedPhrase: nodeify(this.verifySeedPhrase, this),
       clearSeedWordCache: this.clearSeedWordCache.bind(this),
       resetAccount: nodeify(this.resetAccount, this),
+      getSelectedAD: nodeify(this.getSelectedAD, this),
       importAccountWithStrategy: this.importAccountWithStrategy.bind(this),
 
       // vault management
@@ -1103,6 +1105,7 @@ module.exports = class MetamaskController extends EventEmitter {
   getGasPrice () {
     const { recentBlocksController } = this
     const { recentBlocks } = recentBlocksController.store.getState()
+    console.log('DDD',recentBlocks)
 
     // Return 1 gwei if no blocks have been observed:
     if (recentBlocks.length === 0) {

@@ -49,7 +49,7 @@ AccountDetailScreen.prototype.render = function () {
   var checksumAddress = selected && ethUtil.toChecksumAddress(selected)
   var identity = props.identities[selected]
   var account = props.accounts[selected]
-  const { network, conversionRate, currentCurrency,powers } = props
+  const { network, conversionRate, currentCurrency, powers, address } = props
 
   return (
 
@@ -185,9 +185,8 @@ AccountDetailScreen.prototype.render = function () {
         }, [
           h(PowerLabel, {
             value: account && account.balance,
-            conversionRate,
-            currentCurrency,
             powers,
+            address,
             style: {
               borderStyle: 'solid',
               borderWidth: '2px',

@@ -19,7 +19,17 @@ function mapStateToProps(state) {
 
 PowerComponent.prototype.render = function () {
     var props = this.props
-    const { powers, children } = props
+    const { powers, children, address } = props
+    let ispower = 0
+
+    const newArr = powers.filter(function (p) {
+        return p.address === address;
+    });
+    if (newArr.length == 0) {
+        ispower = 0
+    } else {
+        ispower = newArr[0].power
+    }
 
     let value = children.split(" ")[0]
     if (!value) {
@@ -29,34 +39,31 @@ PowerComponent.prototype.render = function () {
 
     let widthlong = 0
     let maxpower = (Math.exp(-1 / (Number(value) * 50) * 10000) * 10000000 + 200000) * 18 * Math.pow(10, 9) / Math.pow(10, 18)
-    let availablepower = powers.power
-    if(!availablepower){
-        availablepower = 0
-    }
-    widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100
+    let availablepower = ispower || 0
+    widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100 || 0
 
     return (
         h(Tooltip, {
             position: 'bottom',
             title: `${availablepower} / ${maxpower}`
         }, [
-            h('div.powerlabel',{
-                style: {
-                    borderStyle: 'solid',
-                    borderWidth: '2px',
-                    borderColor: 'rgba(128,185,242,1)',
-                    width: '180px'
-                }
-            },[
-                h('div', {
-                style: {
-                    width: `${widthlong}%`,
-                    color: '#0A5448',
-                    backgroundColor: 'rgba(128,185,242,1)',
-                    fontSize: '14px',
-                    textAlign: 'center',
-                },
-            }, `Power:${widthlong}%`)])
+                h('div.powerlabel', {
+                    style: {
+                        borderStyle: 'solid',
+                        borderWidth: '2px',
+                        borderColor: 'rgba(128,185,242,1)',
+                        width: '180px'
+                    }
+                }, [
+                        h('div', {
+                            style: {
+                                width: `${widthlong}%`,
+                                color: '#0A5448',
+                                backgroundColor: 'rgba(128,185,242,1)',
+                                fontSize: '14px',
+                                textAlign: 'center',
+                            },
+                        }, `Power:${widthlong}%`)])
             ])
     )
 }

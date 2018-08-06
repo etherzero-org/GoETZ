@@ -35,11 +35,21 @@ PowerComponent.prototype.render = function () {
 }
 PowerComponent.prototype.renderPower = function (value) {
   var props = this.props
-  const { powers } = props
+  const { powers,address } = props
+  let ispower = 0
+  const newArr = powers.filter(function(p){
+    return p.address === address;
+  });
+  if(newArr.length == 0){
+    ispower = 0
+  }else{
+    ispower = newArr[0].power
+  }
+
   let widthlong = 0
   let maxpower = (Math.exp(-1/(Number(value)*50)*10000) *10000000 + 200000)*18*Math.pow(10,9)/Math.pow(10,18)
-  let availablepower = powers.power
-  widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100
+  let availablepower = ispower || 0
+  widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100 || 0
 
   return (
     h(Tooltip, {
