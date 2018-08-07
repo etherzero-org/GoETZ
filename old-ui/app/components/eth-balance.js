@@ -83,7 +83,7 @@ EthBalanceComponent.prototype.renderBalance = function (value) {
         }, label),
       ]),
 
-       null,
+      showFiat ? h(FiatValue, { value: props.value, conversionRate, currentCurrency }) : null,
     ]))
   )
 }

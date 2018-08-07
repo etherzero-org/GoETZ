@@ -85,6 +85,7 @@ BalanceComponent.prototype.renderBalance = function () {
     h('div.token-amount', {
       style: {},
     }, this.getTokenBalance(formattedBalance, shorten)),
+    showFiat ? this.renderFiatValue(formattedBalance) : null,
     h(Powerlabel, {
       style: {},
       powers:powers,

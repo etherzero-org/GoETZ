@@ -181,8 +181,16 @@ AccountDetailScreen.prototype.render = function () {
           style: {
             justifyContent: 'space-between',
             alignItems: 'flex-start',
+            marginBottom: '10px'
           },
         }, [
+          h(EthBalance, {
+            value: account && account.balance,
+            conversionRate,
+            currentCurrency,
+            style: {
+            },
+          }),
           h(PowerLabel, {
             value: account && account.balance,
             powers,
@@ -191,16 +199,9 @@ AccountDetailScreen.prototype.render = function () {
               borderStyle: 'solid',
               borderWidth: '2px',
               borderColor: 'rgba(128,185,242,1)',
-              width: '130px'
-            },
-          }),
-          h(EthBalance, {
-            value: account && account.balance,
-            conversionRate,
-            currentCurrency,
-            style: {
-              marginLeft: '-129px',
-              marginTop: '30px'
+              width: '130px',
+              marginTop: '30px',
+              position: 'absolute'
             },
           }),
           

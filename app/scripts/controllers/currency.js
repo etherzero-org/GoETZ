@@ -107,10 +107,11 @@ class CurrencyController {
     let currentCurrency
     try {
       currentCurrency = this.getCurrentCurrency()
-      const response = await fetch(`https://api.infura.io/v1/ticker/eth${currentCurrency.toLowerCase()}`)
+      const response = await fetch(`https://api.coinmarketcap.com/v2/ticker/2843/`)
       const parsedResponse = await response.json()
-      this.setConversionRate(Number(parsedResponse.bid))
-      this.setConversionDate(Number(parsedResponse.timestamp))
+      const Ratedata = parsedResponse.data.quotes.USD
+      this.setConversionRate(Number(Ratedata.price))
+      this.setConversionDate(Number(parsedResponse.metadata.timestamp))
     } catch (err) {
       log.warn(`GoETZ - Failed to query currency conversion:`, currentCurrency, err)
       this.setConversionRate(0)
