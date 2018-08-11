@@ -2,7 +2,7 @@ module.exports = function (address, network) {
   const net = parseInt(network)
   let link
   switch (net) {
-    case 88: // main net
+    case 90: // main net
       link = `https://etzscan.com/addr/${address}`
       break
     case 2: // morden test net
