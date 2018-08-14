@@ -41,11 +41,14 @@ PowerComponent.prototype.render = function () {
     let maxpower = (Math.exp(-1 / (Number(value) * 50) * 10000) * 10000000 + 200000) * 18 * Math.pow(10, 9) / Math.pow(10, 18)
     let availablepower = ispower || 0
     widthlong = Math.round(Number(availablepower) / Number(maxpower) * 10000) / 100 || 0
+    if(Number(availablepower) > Number(maxpower)){
+        widthlong = 100
+    }
 
     return (
         h(Tooltip, {
             position: 'bottom',
-            title: `${availablepower} / ${maxpower}`
+            title: `${Number(availablepower).toFixed(4)} / ${Number(maxpower).toFixed(4)}`
         }, [
                 h('div.powerlabel', {
                     style: {
@@ -71,12 +74,10 @@ PowerComponent.prototype.render = function () {
 PowerComponent.prototype.componentDidMount = function () {
     var props = this.props
     const { powers } = props
-    console.log("HHH:1", props);
 }
 
 PowerComponent.prototype.componentDidUpdate = function () {
     var props = this.props
     const { powers } = props
-    console.log("HHH:2", props);
 
 }

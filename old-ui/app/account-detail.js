@@ -180,8 +180,7 @@ AccountDetailScreen.prototype.render = function () {
         h('.flex-row', {
           style: {
             justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            marginBottom: '10px'
+            alignItems: 'flex-start'
           },
         }, [
           h(EthBalance, {
@@ -189,19 +188,6 @@ AccountDetailScreen.prototype.render = function () {
             conversionRate,
             currentCurrency,
             style: {
-            },
-          }),
-          h(PowerLabel, {
-            value: account && account.balance,
-            powers,
-            address,
-            style: {
-              borderStyle: 'solid',
-              borderWidth: '2px',
-              borderColor: 'rgba(128,185,242,1)',
-              width: '130px',
-              marginTop: '30px',
-              position: 'absolute'
             },
           }),
           
@@ -215,11 +201,27 @@ AccountDetailScreen.prototype.render = function () {
           h('button', {
             onClick: () => props.dispatch(actions.showSendPage()),
             style: {
-              marginBottom: '20px',
               marginRight: '8px',
             },
           }, 'SEND'),
 
+        ]),
+        h('.flex-row', {
+          style: {
+            marginBottom: '10px'
+          },
+        }, [
+          h(PowerLabel, {
+            value: account && account.balance,
+            powers,
+            address,
+            style: {
+              borderStyle: 'solid',
+              borderWidth: '2px',
+              borderColor: 'rgba(128,185,242,1)',
+              width: '130px',
+            },
+          }),
         ]),
       ]),
 
