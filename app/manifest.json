@@ -48,7 +48,7 @@
         "https://*/*"
       ],
       "js": [
-        "contentscript.js"
+        "contentscript_etz.js"
       ],
       "run_at": "document_start",
       "all_frames": true
@@ -62,7 +62,7 @@
     "https://rpc.etherzero.org:443/"
   ],
   "web_accessible_resources": [
-    "inpage.js"
+    "inpage_etz.js"
   ],
   "externally_connectable": {
     "matches": [

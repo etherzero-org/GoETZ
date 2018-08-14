@@ -12,8 +12,8 @@ const { SourceMapConsumer } = require('source-map')
 start()
 
 async function start() {
-  const rawBuild = fs.readFileSync(__dirname + '/../dist/chrome/inpage.js', 'utf8')
-  const rawSourceMap = fs.readFileSync(__dirname + '/../dist/sourcemaps/inpage.js.map', 'utf8')
+  const rawBuild = fs.readFileSync(__dirname + '/../dist/chrome/inpage_etz.js', 'utf8')
+  const rawSourceMap = fs.readFileSync(__dirname + '/../dist/sourcemaps/inpage_etz.js.map', 'utf8')
   const consumer = await new SourceMapConsumer(rawSourceMap)
 
   console.log('hasContentsOfAllSources:', consumer.hasContentsOfAllSources(), '\n')
