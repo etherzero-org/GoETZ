@@ -18,13 +18,13 @@ class ExportTextContainer extends Component {
           h('.export-text-container__button.export-text-container__button--copy', {
             onClick: () => copyToClipboard(text),
           }, [
-            h('img', { src: 'images/copy-to-clipboard.svg' }),
+            h('img', { src: 'images/copy-to-clipboard.svg' , style:{width: "50px"}}),
             h('.export-text-container__button-text', t('copyToClipboard')),
           ]),
           h('.export-text-container__button', {
             onClick: () => exportAsFile(filename, text),
           }, [
-            h('img', { src: 'images/download.svg' }),
+            h('img', { src: 'images/download.svg' , style:{width: "50px"}}),
             h('.export-text-container__button-text', t('saveAsCsvFile')),
           ]),
         ]),
