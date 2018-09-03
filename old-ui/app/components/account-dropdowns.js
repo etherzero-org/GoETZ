@@ -25,6 +25,7 @@ class AccountDropdowns extends Component {
     const { identities, selected, keyrings } = this.props
 
     return Object.keys(identities).map((key, index) => {
+      console.log("账号",identities);
       const identity = identities[key]
       const isSelected = identity.address === selected
 
