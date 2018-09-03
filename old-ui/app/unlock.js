@@ -13,7 +13,7 @@ module.exports = connect(mapStateToProps)(UnlockScreen)
 inherits(UnlockScreen, Component)
 function UnlockScreen () {
   Component.call(this)
-  // this.animationEventEmitter = new EventEmitter()
+  this.animationEventEmitter = new EventEmitter()
 }
 
 function mapStateToProps (state) {

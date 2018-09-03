@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "short_name": "__MSG_appName__",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "manifest_version": 2,
   "author": "http://etherzero.org",
   "description": "__MSG_appDescription__",
@@ -59,14 +59,14 @@
     "unlimitedStorage",
     "clipboardWrite",
     "http://localhost:9646/",
-    "https://rpc.etherzero.org:443/"
+    "https://etzrpc.org:443/"
   ],
   "web_accessible_resources": [
     "inpage_etz.js"
   ],
   "externally_connectable": {
     "matches": [
-      "https://rpc.etherzero.org:443/*"
+      "https://etzrpc.org:443/*"
     ]
   }
 }
