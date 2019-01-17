@@ -13,7 +13,7 @@
 
 6. 点击确认添加，完成安装
 
-![教程.gif](./Tutorials.gif)
+![教程.gif](./img/Tutorials.gif)
 
 
 __________________
