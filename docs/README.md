@@ -1,13 +1,20 @@
-# Documentation
+如何在谷歌浏览器添加 GoETZ扩展（插件）
+======================
+
+1. 下载 [GoETZ 插件钱包](http://etz.oss-cn-hongkong.aliyuncs.com/pehghggdpcogjpbghapgfphphfaijmbp_main.crx)
+
+2. 检查使用的谷歌浏览器是否为最新版本
+
+3. 打开谷歌浏览器 > 设置（新版本的浏览器点击右上角的按钮）>  更多工具  >  扩展程序
+
+4. 把开发者选项打开
+
+5. 将下载的 GoETZ插件钱包（.crx） 文件拖入浏览器中
+
+6. 点击确认添加，完成安装
+
+![教程.gif](./Tutorials.gif)
 
 
-- [How to add custom build to Chrome](./add-to-chrome.md)
-- [How to add custom build to Firefox](./add-to-firefox.md)
-- [How to develop a live-reloading UI](./ui-dev-mode.md)
-- [Publishing Guide](./publishing.md)
-- [How to develop an in-browser mocked UI](./ui-mock-mode.md)
-- [How to live reload on local dependency changes](./developing-on-deps.md)
-- [How to add new networks to the Provider Menu](./adding-new-networks.md)
-- [How to manage notices that appear when the app starts up](./notices.md)
-- [How to port MetaMask to a new platform](./porting_to_new_environment.md)
-- [How to generate a visualization of this repository's development](./development-visualization.md)
+__________________
+[GoETZ 下载连链接](http://etz.oss-cn-hongkong.aliyuncs.com/pehghggdpcogjpbghapgfphphfaijmbp_main.crx)
