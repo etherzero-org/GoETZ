@@ -1,7 +1,7 @@
 How to add GoETZ extensions (plugins) in Google Chrome
 =======================
 
-1. Download [GoETZ Plugin Wallet] (http://etz.oss-cn-hongkong.aliyuncs.com/pehghggdpcogjpbghapgfphphfaijmbp_main.crx)
+1. Download [GoETZ](http://etz.oss-cn-hongkong.aliyuncs.com/pehghggdpcogjpbghapgfphphfaijmbp_main.crx)
 
 2. Check if the Google Chrome you are using is the latest version
 
